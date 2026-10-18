@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-18",
+  "version": "0.1.0",
+  "windows": {
+    "tests": 425,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "linux": {
+    "tests": 425,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_assets": 220,
+  "source_rpc_names": 374,
+  "rpc_wire_layout_and_roundtrip_tested": 374,
+  "login_real": true,
+  "reopen_without_otp_count": 3,
+  "windows_to_linux_real_session": true,
+  "live_message_event": true,
+  "self_only_media_checks": {
+    "text_read_back": true,
+    "reply_parent_matches": true,
+    "photo_download_decoded": true,
+    "video_download_decoded": true,
+    "forward_read_back": true,
+    "unsupported_poll_reported_explicitly": true
+  },
+  "h264_send_read_download": true,
+  "public_websocket_handshakes": 4,
+  "http_fallback_status": 404,
+  "poll_in_saved_messages_supported": false,
+  "multi_day_production_soak_tested": false,
+  "github_actions_matrix_completed": false,
+  "pypi_published": false,
+  "scope": "Live writes were limited to the consenting account's own Saved Messages. No claim is made that all account RPCs were run live."
+}

@@ -1,0 +1,1154 @@
+{
+  "retrieved_on": "2026-10-18",
+  "main_bundle": "main.6f45955b86113fb74554.js",
+  "chunk_count_in_manifest": 219,
+  "assets": [
+    {
+      "url": "https://web.splus.ir/1022.9714832df9f9cae7f6cd.js",
+      "sha256": "af0d7cc2cf8feec55632557296ecaaf1a6b7eedd952276869355fc19fe281e2f",
+      "bytes": 639
+    },
+    {
+      "url": "https://web.splus.ir/103.b7783297a8eed4ce87e8.js",
+      "sha256": "c8c03eb6e3504eed905c93728d3a549be1208fecfef1a3b5a4ec30fc8a5c524d",
+      "bytes": 1012
+    },
+    {
+      "url": "https://web.splus.ir/1095.35215f53c3bb9c31136a.js",
+      "sha256": "e86256f213f5ea28fcdbf79bddceac2d85d6f762dea888efe9fdc308934d0d35",
+      "bytes": 411
+    },
+    {
+      "url": "https://web.splus.ir/1105.5fd284eec6e7a8bbc09d.js",
+      "sha256": "707ee60073b3b509723c257cd36509bcbb2a482079962388c7aea04fd57360cf",
+      "bytes": 1879
+    },
+    {
+      "url": "https://web.splus.ir/1164.9e8580dadfe1292cb4ab.js",
+      "sha256": "8a7c1c51d54631886fca36468d2f1e26c56dafe20863e684d6a027e7b4013ed4",
+      "bytes": 1697
+    },
+    {
+      "url": "https://web.splus.ir/1168.c6bf958b507d745756ee.js",
+      "sha256": "94f54a53c8904b95b7c9e79ac50772d244291d960e526341152c21e25d472b56",
+      "bytes": 1056
+    },
+    {
+      "url": "https://web.splus.ir/1184.7cc53f9e4e26bcb154cd.js",
+      "sha256": "da2f67dce8eadf46f9a13ee49aec70642af2964f9d4e1fa022f2fe044ad48a90",
+      "bytes": 35073
+    },
+    {
+      "url": "https://web.splus.ir/1215.4d6a7ec8ad38a3694b2f.js",
+      "sha256": "8e2559013492abc7c301218cd5560029cda87a6ca6be1d3b1528643cb09e34e6",
+      "bytes": 646
+    },
+    {
+      "url": "https://web.splus.ir/1348.03f837aebae99e4f8318.js",
+      "sha256": "c732202c2d5475ed2a5e9ab33ad9717a3545707f209409d459a4124daad3759b",
+      "bytes": 2127
+    },
+    {
+      "url": "https://web.splus.ir/1387.b87b552ed22bde31acbc.js",
+      "sha256": "4785baf4c276c3c5f1862ebb75f123e4440f19e22ef2487f79102b7b445073a2",
+      "bytes": 710
+    },
+    {
+      "url": "https://web.splus.ir/1401.7e290c61eeffafc9e258.js",
+      "sha256": "1866141819660f1744278729cb08823605555d2c15804bbeb748794866d0df71",
+      "bytes": 2029
+    },
+    {
+      "url": "https://web.splus.ir/1456.8c5487849450d1bb1b3b.js",
+      "sha256": "148aac57677634ef7d1ad9820a31d8163aa2f25d7605a6c4a43dc0e04b0e951c",
+      "bytes": 1071187
+    },
+    {
+      "url": "https://web.splus.ir/1465.1e02d54ae2bc21777e05.js",
+      "sha256": "e56c81a537b1bc1605eb928d41c7faca761cfe36a4f99d30435a86ac939c54b8",
+      "bytes": 1383
+    },
+    {
+      "url": "https://web.splus.ir/1516.e0d8f37160b174a834aa.js",
+      "sha256": "5722c2a8b3731ace39aa46d2df922739d271c6a8ffb0c70f4fd3677211d91f85",
+      "bytes": 2287
+    },
+    {
+      "url": "https://web.splus.ir/1575.e5f78f9dcb773b36c9c7.js",
+      "sha256": "4e4ec9d43e23d8e35305f75947095f6da293806482a9c5ce287042dd872a8f94",
+      "bytes": 1411
+    },
+    {
+      "url": "https://web.splus.ir/1586.aa730a1fd3179e55e5f8.js",
+      "sha256": "af44203a08a4574a1500ba620bde78f0562a466491d438617938ee4750b92d34",
+      "bytes": 774
+    },
+    {
+      "url": "https://web.splus.ir/1620.352e7a9530be071cd928.js",
+      "sha256": "0181b6a14dd0a623ba7defc72c60546a4516ecfc09aaf97f5ea5eafd6fd38c75",
+      "bytes": 1266
+    },
+    {
+      "url": "https://web.splus.ir/1692.9591ea94b5904c43b4e6.js",
+      "sha256": "db7b311b5e556b2bc76ff9fbf88cab4e2c4a799cbdbbaacab45a17e1e03434a9",
+      "bytes": 560
+    },
+    {
+      "url": "https://web.splus.ir/1700.4160aa32d20f21b9e9af.js",
+      "sha256": "6d0ce89d5a85f35e5c2501153deddc2d28bc010d46ef42c88da841efe9b20604",
+      "bytes": 1279
+    },
+    {
+      "url": "https://web.splus.ir/1775.5a727fd4d75c4fa27ed3.js",
+      "sha256": "42c7ce10621deac48af22924e21342d6e117f81b491e281543ca53c073e09783",
+      "bytes": 736
+    },
+    {
+      "url": "https://web.splus.ir/1780.2f7e2a269300574685f5.js",
+      "sha256": "6e4ba5390701a9d5ff178fd918dbadf20dd3762220f01762d53f2e09d3d4b7a9",
+      "bytes": 1991
+    },
+    {
+      "url": "https://web.splus.ir/1877.385a553dcfe611259190.js",
+      "sha256": "d0914ef237c5a8bc8263f28f5b944dcbb0a14ca77c15457e2b4a6cd6243773c6",
+      "bytes": 2066
+    },
+    {
+      "url": "https://web.splus.ir/194.ef3f9016ac0feb6b0d27.js",
+      "sha256": "107e2c831992c6856f2b7cb27ae6c9c5b59eaea14f7ded4384d7a8711d8f7327",
+      "bytes": 1924
+    },
+    {
+      "url": "https://web.splus.ir/2057.dd074370f014884cc4ce.js",
+      "sha256": "27de3030c841a4d8803d6b810a45edf22ad390fea7c8cfbdbb8822f6e9b52780",
+      "bytes": 2600
+    },
+    {
+      "url": "https://web.splus.ir/2118.e195d0770c9202ffc257.js",
+      "sha256": "aa15f509e206d62c724aa0fa48977cdd714cf19537f84a4560fa1885538662b7",
+      "bytes": 23999
+    },
+    {
+      "url": "https://web.splus.ir/2158.66af6867219be16ba784.js",
+      "sha256": "22bf39ec3405e12ced5d68b88c1518f68d13da91996a86beb124f112173fe378",
+      "bytes": 1190
+    },
+    {
+      "url": "https://web.splus.ir/2164.edb01b4a11a86c5f634c.js",
+      "sha256": "2c303b4864c7bf75d4bf39b24b8e0ec9690fabf64b9bee0eb95594f07df0bc97",
+      "bytes": 4839
+    },
+    {
+      "url": "https://web.splus.ir/2225.cdfa5331205add846ebf.js",
+      "sha256": "ef67ce265ae99d56213bd886b1693d46dcb31544efc20989203c22d0ddbafe53",
+      "bytes": 11986
+    },
+    {
+      "url": "https://web.splus.ir/2230.1f20a59c10e516e0756f.js",
+      "sha256": "dfbf36dc88472f1824bd28f8bbdbcbd6123c00ea67733108dabc0d8f6480bcea",
+      "bytes": 1664
+    },
+    {
+      "url": "https://web.splus.ir/2394.e8c4a0295f4017e75cb5.js",
+      "sha256": "6255396fba460dc2823324b42a95adfcc55a89537f83842f3ff0df2dd98a4b4a",
+      "bytes": 68854
+    },
+    {
+      "url": "https://web.splus.ir/244.e21fa85a9f2c5f67e93b.js",
+      "sha256": "73bc1842985558b59498f63834bfc0e55d7b637c3fe5eb4d520cdfbb9faa3475",
+      "bytes": 269127
+    },
+    {
+      "url": "https://web.splus.ir/2440.63b14778220ff3b9c324.js",
+      "sha256": "c5afb70068f2d5f65d06c8c685854fea23389545c5e47e5ffc2bb5bab1716315",
+      "bytes": 1184
+    },
+    {
+      "url": "https://web.splus.ir/2448.d9517621dbbf23a7e42f.js",
+      "sha256": "0bc5506d9ba7801765d4f9771c97d99a1c380e639f965b3a5230ec8e0e4608d9",
+      "bytes": 55109
+    },
+    {
+      "url": "https://web.splus.ir/2498.9a79c10b5d2be1517db1.js",
+      "sha256": "1f43e236cde59d6b4537cbc89673aa7c2583f1404148dab514cfdf8d991b8fcb",
+      "bytes": 1791
+    },
+    {
+      "url": "https://web.splus.ir/26.1c0f087634503c2e29e7.js",
+      "sha256": "990ccad44f7dc151104c49da69da88bb5290c3cb2b60861dbd919e30a4d07b78",
+      "bytes": 3050
+    },
+    {
+      "url": "https://web.splus.ir/2651.3c0ce002c6248a489f64.js",
+      "sha256": "7163965ef20b43a209a84b5f9e6f44fc1304d8133a8dbcf63f333916c1dd28b3",
+      "bytes": 1601
+    },
+    {
+      "url": "https://web.splus.ir/2670.ac581f740e127d704542.js",
+      "sha256": "78527c32e7f9ef2b83e786d13d770f7863050afcecc41babbc2b44b0f11caee2",
+      "bytes": 1041
+    },
+    {
+      "url": "https://web.splus.ir/2729.14fd14c661426666adc3.js",
+      "sha256": "01f6022f3093f9b74f94ff1e85df0a96bd35d88d81da0f3f36aa5388194a7cec",
+      "bytes": 2502
+    },
+    {
+      "url": "https://web.splus.ir/2771.8663bba803dda58ab1d1.js",
+      "sha256": "abb1bc1617d65e522b4ce53ade6a6c0b44cfe6ac2c251e1d34e0cf50e860efd4",
+      "bytes": 49865
+    },
+    {
+      "url": "https://web.splus.ir/2800.f8fd8d48709e13a3850c.js",
+      "sha256": "933776d420d409068f023a2a1b0e3ee9524fd4f8a116f3f83f75c92dcb0d88a1",
+      "bytes": 969
+    },
+    {
+      "url": "https://web.splus.ir/2801.2e925e48ad176695c129.js",
+      "sha256": "777fda3cc16a93e486764b972d11872aaf48071f8ad1e6f14e66a911b93627de",
+      "bytes": 7461
+    },
+    {
+      "url": "https://web.splus.ir/2856.293a1df9cc642a252105.js",
+      "sha256": "82b53c842dbc5786bff4eed2d0fe66a9979dff3cb8b9b7e53396cca7a42bc105",
+      "bytes": 6369
+    },
+    {
+      "url": "https://web.splus.ir/2857.ce2ccbafbc415581543a.js",
+      "sha256": "80a67bd1187f215a2d61d3d77ec9947413841ac97d67f44ba4899315d52f2dda",
+      "bytes": 6482
+    },
+    {
+      "url": "https://web.splus.ir/2916.a52f0a356ad9e906b8ab.js",
+      "sha256": "339628640c8d546f290502e5767eb31f70254d73254aa14dccb3393aaff6d6c5",
+      "bytes": 6563
+    },
+    {
+      "url": "https://web.splus.ir/2990.28d7556fef53f14d1e46.js",
+      "sha256": "0c0714299e1a028f0d8fc9fad1254e8ed790f134cc1bebc2d6ef3fe45752f21c",
+      "bytes": 392
+    },
+    {
+      "url": "https://web.splus.ir/304.dbc52baf30e4e8f2ad2c.js",
+      "sha256": "60ab6063ae0497b6748871e92109bf12ee1cb0cd83cdd6e72bc028f859d04cbd",
+      "bytes": 124422
+    },
+    {
+      "url": "https://web.splus.ir/3080.be2dd4ab9f904aa9003c.js",
+      "sha256": "9f6e05b40119d1fa285adc6b191c034e2b863e613f94934776686ac7d1291a11",
+      "bytes": 1200
+    },
+    {
+      "url": "https://web.splus.ir/313.1a063fe1267696e0eea0.js",
+      "sha256": "c19e63648dbe0b30195f447390b119154ba6b40320e14e3595f748736999e7ba",
+      "bytes": 4413
+    },
+    {
+      "url": "https://web.splus.ir/3325.5193c1e073ad318a8cbc.js",
+      "sha256": "53650eeedc45df2708bf7a417332b0aca84e34480d9df8e666205e3e0602ce72",
+      "bytes": 12593
+    },
+    {
+      "url": "https://web.splus.ir/3363.10e4a12b36cbeb2d2597.js",
+      "sha256": "59763197c5e07071aad1b4ab3b1c0d0eb5c5c6c27723f039fac94fc1b8968cc1",
+      "bytes": 5696
+    },
+    {
+      "url": "https://web.splus.ir/3405.42a334b79f9191cdfd48.js",
+      "sha256": "66c5a6d4fd0793f43d43c93aa438e057834c4f4905c29b481ff6a7fcb3fcdf69",
+      "bytes": 2614
+    },
+    {
+      "url": "https://web.splus.ir/3499.bc53be853658a6eb13be.js",
+      "sha256": "aed722340150a76a32c84206174a78e467ed0b9ece5b2585fd7f476f51cbf5ee",
+      "bytes": 3900
+    },
+    {
+      "url": "https://web.splus.ir/3524.5d2c5926481765406624.js",
+      "sha256": "7c08583cfee3aba0b71570f7b8da50b9f9f0e41b404bd53ba67e95c9341a99b7",
+      "bytes": 3528
+    },
+    {
+      "url": "https://web.splus.ir/356.970451a5da77abb27bd6.js",
+      "sha256": "0db8a16e8267b19c9cfbb7b4f392a7e970ec33e35bff25443acc7427ba852dde",
+      "bytes": 1172
+    },
+    {
+      "url": "https://web.splus.ir/3564.f9229836d498b92ea8cf.js",
+      "sha256": "98e948203053620db74c106795c9e29b8c63e33009fff732ac485ba89db1d9db",
+      "bytes": 1243
+    },
+    {
+      "url": "https://web.splus.ir/3715.a9a2909343fd249033e4.js",
+      "sha256": "ed75936d5566707a3169a21cae47c44b50b10b64af0699c42ef36046592f6cbd",
+      "bytes": 4847
+    },
+    {
+      "url": "https://web.splus.ir/373.0804336bbb0510fe1000.js",
+      "sha256": "03fd139815c79831c051ac12d5e39c57a3d5bb0816a2e281d388f58faa242b49",
+      "bytes": 1489
+    },
+    {
+      "url": "https://web.splus.ir/3745.98fe2e940c06a646b00d.js",
+      "sha256": "6dfc0e3f214a2102ffff2a52e1694609f59024152a871f9720325034fef60945",
+      "bytes": 750
+    },
+    {
+      "url": "https://web.splus.ir/3747.fcb44aaf9346c83ae0ce.js",
+      "sha256": "e5a5f7e033b24056aa7e9373042cc0f98b03032f3d2be3ce2a1d46c65863cb73",
+      "bytes": 2110
+    },
+    {
+      "url": "https://web.splus.ir/3787.b42cdcc0fcb7d36ca269.js",
+      "sha256": "2d7f0b48937b60e4682d83abde1d4187d67a81373901f5340adc0b5c81fc49b7",
+      "bytes": 4401
+    },
+    {
+      "url": "https://web.splus.ir/3813.4bd1b110aa1e6fc1579e.js",
+      "sha256": "65f33ae03d27f68754f73fd4ceb9f7fb30773f5a199029f562ad0735b4d7aecd",
+      "bytes": 797
+    },
+    {
+      "url": "https://web.splus.ir/387.5228fc377586e2c5f672.js",
+      "sha256": "968ab9f31d028789f01cf4129789628b8d4261114e7afd44a7bdd5d92cb5d684",
+      "bytes": 1502
+    },
+    {
+      "url": "https://web.splus.ir/3906.a5f92c81c11fb225e8d7.js",
+      "sha256": "06122ec46114cbfa97d233625f0053a256e77c1869fc5f559dcf0a1d2d3513c2",
+      "bytes": 300
+    },
+    {
+      "url": "https://web.splus.ir/3981.e711f69159e2c5dd960e.js",
+      "sha256": "e692b125c1e431131bf417c51fbffa01e47066b160174752930c61d2c0208efd",
+      "bytes": 6395
+    },
+    {
+      "url": "https://web.splus.ir/400.e1f055bfe975ca421c20.js",
+      "sha256": "c9988241186aa62b271f498b5a8f2b4b68c80defee6a674581cc7de4c4e78d8e",
+      "bytes": 2717
+    },
+    {
+      "url": "https://web.splus.ir/4008.f885dec51a5813888108.js",
+      "sha256": "5f756f6385c0611ce15137224934d8bc654d9c60e3f5cd55fbb445162823de64",
+      "bytes": 4015
+    },
+    {
+      "url": "https://web.splus.ir/4019.fcf5115e459276425afc.js",
+      "sha256": "c49d543193855c29fc57c9fad82432cfd20104d75739495f9b6023453d0746d9",
+      "bytes": 3243
+    },
+    {
+      "url": "https://web.splus.ir/4020.ec9e0eab2ced1586b150.js",
+      "sha256": "85f8a5bbac2246c6f05368dff780f8e6199d3d8e10681596cabcea63b9a225b9",
+      "bytes": 5694
+    },
+    {
+      "url": "https://web.splus.ir/405.ec6955848007ffb10a67.js",
+      "sha256": "401c9e436432f05764eb0d1e0cef3de43d5b2122450a830e857efaa9cd619646",
+      "bytes": 1769
+    },
+    {
+      "url": "https://web.splus.ir/409.82a9c80600c046a0994f.js",
+      "sha256": "a2f84b4616220371b748823abc6ab4d8272b4291200519e069ee2625f1e70c8a",
+      "bytes": 844
+    },
+    {
+      "url": "https://web.splus.ir/4102.a4a857ba3c1ea189fbc2.js",
+      "sha256": "e01c7681149c89611c36a98bcac4fce64de9e0ac29cb44332e679fc3b69c114a",
+      "bytes": 10322
+    },
+    {
+      "url": "https://web.splus.ir/4128.6167a1bd0d156d98bcb2.js",
+      "sha256": "619c7001c63015ed6103969143b952b4b5075cfcb759afd856b96e2920584bfd",
+      "bytes": 544
+    },
+    {
+      "url": "https://web.splus.ir/4134.dd2e133c0517a1a1902a.js",
+      "sha256": "6edd720a55b3cf70f498c768c423f49208a2c1408dc579f80bc73903cefd3c8a",
+      "bytes": 3735
+    },
+    {
+      "url": "https://web.splus.ir/4204.5d789efde809fe513a96.js",
+      "sha256": "a5c456af3700755829a2c84b6c2877017850a9635a2067d009c24dabf5a09a2e",
+      "bytes": 5869
+    },
+    {
+      "url": "https://web.splus.ir/4230.cb803c17833a3bc15ba4.js",
+      "sha256": "a2c445ec7d4a26cf762ac7cc382d301722889bd75ec977a8b6fe57c467c87034",
+      "bytes": 4175
+    },
+    {
+      "url": "https://web.splus.ir/4326.88c04cd508dea37f3ff6.js",
+      "sha256": "3fd791653d6a314b9a356797c29225f6524ac26d00f6546e14e65155faabd417",
+      "bytes": 538
+    },
+    {
+      "url": "https://web.splus.ir/433.67a92dc2730a9a597d19.js",
+      "sha256": "b73c6d11ab2ef8ec9149f1977a9f6eed586a0e50599b0ee9f399b04f035c1550",
+      "bytes": 2731
+    },
+    {
+      "url": "https://web.splus.ir/4336.d5109505ec6b849472d6.js",
+      "sha256": "71df367632760b3dd48d1e987989887992441fb300ff01ef7456849721030a47",
+      "bytes": 1783
+    },
+    {
+      "url": "https://web.splus.ir/4383.974a77dacb0e95a7ce02.js",
+      "sha256": "bd87f7854f33d96481e878f5d7ad0cde1782854bea0e73e2a67a4b7958b71d60",
+      "bytes": 2716
+    },
+    {
+      "url": "https://web.splus.ir/4435.ce50e2d3e65d959ef435.js",
+      "sha256": "deaa0624f4a4f7f7bad81712c7a048ae4a5fbb257158c593a6c339b6a0e838fe",
+      "bytes": 1567
+    },
+    {
+      "url": "https://web.splus.ir/4448.110a63768c122b389834.js",
+      "sha256": "a46ffd7b3b66645e07d5a60b35c2ea0aa1419ca6c2b5fbcae754ffb0a4249151",
+      "bytes": 1251
+    },
+    {
+      "url": "https://web.splus.ir/4484.747d7d3602b7bb57d72f.js",
+      "sha256": "9a67e51a5804d79bd539f7b0639b5d9a415a4ad5487cd755de78e4bd8faa61bb",
+      "bytes": 11065
+    },
+    {
+      "url": "https://web.splus.ir/453.c716bbe639807fab56fe.js",
+      "sha256": "569a20dcc05af9a217c6f6d35b2c82f511691e5ebdbe2ae571d6d613b13b10a5",
+      "bytes": 636
+    },
+    {
+      "url": "https://web.splus.ir/4699.4125ecb650acd5783379.js",
+      "sha256": "e8dfa1ed2607570c76a9deb8bc1d5e42a1d3df60951274c0978b1b7c457abd89",
+      "bytes": 17944
+    },
+    {
+      "url": "https://web.splus.ir/4765.8b61750200d34433f93d.js",
+      "sha256": "8d9515b1fa3080792954931fd44223dd5b38d2d4d9de0cf46f7d8eb893734894",
+      "bytes": 31779
+    },
+    {
+      "url": "https://web.splus.ir/4785.50a92eb8be66427b6a68.js",
+      "sha256": "f167db6f4b530b47301206400462b6c639fb95452ebf0c6f50a809926693a31c",
+      "bytes": 28808
+    },
+    {
+      "url": "https://web.splus.ir/482.ab95f0c3eeeb9d0166ba.js",
+      "sha256": "06d194ca31af0b8cd4f4cde56e7006df527dcafc29147bb25fd2d0a008386cbd",
+      "bytes": 71824
+    },
+    {
+      "url": "https://web.splus.ir/4903.e7d8e2f49487903fbeee.js",
+      "sha256": "32d245438f9510643d151d5893ad7da2412668cb226ec663e5fb870c8cd7dc92",
+      "bytes": 24015
+    },
+    {
+      "url": "https://web.splus.ir/4917.5ce73f46fcc4f72e59c8.js",
+      "sha256": "3df976ce061bf48f9220b25f1819d28937099472a27794092a802f6b3a148535",
+      "bytes": 553
+    },
+    {
+      "url": "https://web.splus.ir/4940.a1951ce216462b194c1e.js",
+      "sha256": "c65832a78b741db9e5f6ca07863d31bd04f64810ecaa101358c2b534b17d16fd",
+      "bytes": 4189
+    },
+    {
+      "url": "https://web.splus.ir/4971.caa2040e9d2eb1416cd6.js",
+      "sha256": "70ebc4400ab2b3f5eb16b1714682147ae6e34a78f943976e7f5bca9e5c5fadf0",
+      "bytes": 25284
+    },
+    {
+      "url": "https://web.splus.ir/5032.39bcb1830bcc806ce09f.js",
+      "sha256": "a8f4283f05e49a2aa3e40e83c1c41c04da8e4de8f2274d4e7d5ab2a08473513b",
+      "bytes": 1352
+    },
+    {
+      "url": "https://web.splus.ir/5046.97cbaa96beb9f743950e.js",
+      "sha256": "206062b3280753ca623c6fa3110caacaa7425b3061ebaa9743f70225196c15c2",
+      "bytes": 1063
+    },
+    {
+      "url": "https://web.splus.ir/5073.e32b3a5d5c9cd1a0182a.js",
+      "sha256": "dc07cc8b153993ae04beff04d2d1e9813b9079a763930f56bfa97b979257b8d0",
+      "bytes": 505
+    },
+    {
+      "url": "https://web.splus.ir/510.4cb9a5f63b6f7ea546d0.js",
+      "sha256": "a2d6cbf8e2c741009ea51d09b920c1cdea18716be6fba1e19073737083399b96",
+      "bytes": 51147
+    },
+    {
+      "url": "https://web.splus.ir/5116.2cc03d444c1726b4e682.js",
+      "sha256": "9af114f8e01137bd95eb0dcaeca46c7121b731cff3baf9b80635592d392439db",
+      "bytes": 621
+    },
+    {
+      "url": "https://web.splus.ir/5148.391759f7f91534f703f0.js",
+      "sha256": "555b3324542e7e35f79b5c5c27c4e6b55745e24628062c6deec1906e01ac74b3",
+      "bytes": 2312
+    },
+    {
+      "url": "https://web.splus.ir/5193.4a25a73e07c381929f33.js",
+      "sha256": "0f3db5cc33186d05cc239726ae417f5828a017bebd3eeaed32aa966194779ae3",
+      "bytes": 51884
+    },
+    {
+      "url": "https://web.splus.ir/5246.ee22f57d09b1972ac1b9.js",
+      "sha256": "11bc3a38621164956286fb73b25b021e19059af04f5679181b760066c7919694",
+      "bytes": 2345
+    },
+    {
+      "url": "https://web.splus.ir/5260.9b6757cdf792c8796471.js",
+      "sha256": "acf083e5eedc122a7f24a4595232dea3c4e7fcbb85c4efeafcf3767745127f63",
+      "bytes": 1107
+    },
+    {
+      "url": "https://web.splus.ir/5336.05c5cadb6b4c98b85518.js",
+      "sha256": "d1149c096bfff2ec2bcceea6889e1b0499efbea0fd7bc52373e0734e2989ee81",
+      "bytes": 875
+    },
+    {
+      "url": "https://web.splus.ir/5345.d0569348627e76efef1f.js",
+      "sha256": "202c4ca4580ee444d95b57f75f710dc56dcffc9967b538e31a9c69f0828cf1d2",
+      "bytes": 779
+    },
+    {
+      "url": "https://web.splus.ir/5361.f15a857f85108121767a.js",
+      "sha256": "35d75086daecd7908cea3d2edcf6eee2d388589b40ea7f9da880b3613c7148af",
+      "bytes": 1964
+    },
+    {
+      "url": "https://web.splus.ir/5429.de3a6cf1826f8366189d.js",
+      "sha256": "e741f48eff12f79afe3225a2b5884cbb19b86782a47b839077127799cfd2bf99",
+      "bytes": 3378
+    },
+    {
+      "url": "https://web.splus.ir/5434.335f2421f65c7f566af9.js",
+      "sha256": "a0dede48f0c875b9336fb2bedd69eb264e0c42ab64021e96fada507865128f24",
+      "bytes": 1228
+    },
+    {
+      "url": "https://web.splus.ir/5438.b9b3e807212714762591.js",
+      "sha256": "c1609c88d328446db993b343fb473e833f7f0afd8e1414bc943ec99a2f1a2156",
+      "bytes": 2076
+    },
+    {
+      "url": "https://web.splus.ir/5499.0df4d73432b794a93ecf.js",
+      "sha256": "b167b298090143c80f03aedf91f72f8485e81091fd3063d252a8d33320c64a3c",
+      "bytes": 844
+    },
+    {
+      "url": "https://web.splus.ir/5525.cd0af1b4d3832498c30e.js",
+      "sha256": "92ea38cf044eb2d0daeee70a01caf49a613d5f585bb96c9bc0127402807a08e4",
+      "bytes": 3078
+    },
+    {
+      "url": "https://web.splus.ir/562.7f57c97609276462c083.js",
+      "sha256": "33bbfa0baa2df511b9e19ac9a29f84d042d53bb6314515b771cdc5787d2f4f47",
+      "bytes": 4200
+    },
+    {
+      "url": "https://web.splus.ir/5628.6951b20cf2b93a779cab.js",
+      "sha256": "4115c43daba161ba56737e15d7dc3e7da8006f724e9b7c4da847066e93e1f2f9",
+      "bytes": 8717
+    },
+    {
+      "url": "https://web.splus.ir/564.42c4828e8127eda15216.js",
+      "sha256": "3ca38620e4dad0f529c83fd36f1ab0ab6997b77765c06d03f3d50f11b35a4952",
+      "bytes": 1335
+    },
+    {
+      "url": "https://web.splus.ir/5719.9111d0ffc41d3e3cf903.js",
+      "sha256": "c4e2b29917a37e647010a63d864ac58f48f3241584f81532d6f5ba7518fbcb14",
+      "bytes": 655
+    },
+    {
+      "url": "https://web.splus.ir/5735.48e2e54e74fd5d0f81ff.js",
+      "sha256": "6b147e5d4421fb889949a3790f9b8e31adc70d96f4ae18a51d5ca5db5e08a6e1",
+      "bytes": 3444
+    },
+    {
+      "url": "https://web.splus.ir/5819.431b639d6c56258d02f5.js",
+      "sha256": "36f21ef1e8b88d74113334470e6ebcf276da5c7b431ff29858f87b685e37fc77",
+      "bytes": 1393
+    },
+    {
+      "url": "https://web.splus.ir/59.909f06a4bd5d9fb22857.js",
+      "sha256": "e7d2d81e6a5ab10e6449eeedfc0d18990a1d74011d54ddac78d505d9a5ae5cdd",
+      "bytes": 3459
+    },
+    {
+      "url": "https://web.splus.ir/5962.9f564460a3567f607211.js",
+      "sha256": "be676bd6c05eb8d09255a5499c5a35f2241e0e3df3339cc0a217d3375f9f6ea2",
+      "bytes": 1689
+    },
+    {
+      "url": "https://web.splus.ir/6047.e44237286b114565b08a.js",
+      "sha256": "72e71500d701fe8d15eb732556fd5db87b612330600b1ed91d76f5970d001272",
+      "bytes": 544
+    },
+    {
+      "url": "https://web.splus.ir/6058.ac85caf21bec631239f6.js",
+      "sha256": "9dd86d3b4bef54da50eaadde6e55bdd8f247d3af272211cac026006975046d8f",
+      "bytes": 351
+    },
+    {
+      "url": "https://web.splus.ir/61.2992d028b742027a2cab.js",
+      "sha256": "e92bf9657781f220c656f0ed345fa981dbc7387d3343440b9e57b61604115c0e",
+      "bytes": 896
+    },
+    {
+      "url": "https://web.splus.ir/6167.b55663afb8b84d2c18b4.js",
+      "sha256": "e87085c28f234faa27b0627f5aa897ac8a01774aed308c0867faaa4b76780f8d",
+      "bytes": 2537
+    },
+    {
+      "url": "https://web.splus.ir/6168.8d6af173488593bb1292.js",
+      "sha256": "e163e6848888648f495cd4d78aba2ffe8267701ff65bac63c2b6372162873917",
+      "bytes": 10970
+    },
+    {
+      "url": "https://web.splus.ir/6241.ae2553444f7b682eb972.js",
+      "sha256": "a2b8afd07aad4d47a3fd7d138db2c0d77bce3a4bc44ef087d2aa081794033042",
+      "bytes": 5382
+    },
+    {
+      "url": "https://web.splus.ir/6265.2243441769d1ffa97622.js",
+      "sha256": "e854ffa640ca16c688f6c6c35d424d16d46f37aa21cbaf1ed3a30e07167f9d13",
+      "bytes": 763
+    },
+    {
+      "url": "https://web.splus.ir/6272.2a7ec62bdbbce0db5b81.js",
+      "sha256": "2db29d23ee3929fd0e6f6d52e4884bad83c674600516724bfe28dc4ce423ae2d",
+      "bytes": 931
+    },
+    {
+      "url": "https://web.splus.ir/6308.7b0c1e717d80c0958c73.js",
+      "sha256": "59f55a8bde46b5ae2833d997b773dead28072a07c9c7946654f35a619d2ae32f",
+      "bytes": 2269
+    },
+    {
+      "url": "https://web.splus.ir/633.c200e7941be3c5b3a462.js",
+      "sha256": "7764a2e007305bf06fa776034a2820705dec468f249c3c63f382a900fc059287",
+      "bytes": 4025
+    },
+    {
+      "url": "https://web.splus.ir/6338.0b2c87a39daa0c9207c9.js",
+      "sha256": "0e27e04018317ee574a2e057646a69b664327757048d6907f6d82edbfbdd7186",
+      "bytes": 1925
+    },
+    {
+      "url": "https://web.splus.ir/6441.3a7bde5d138716249af2.js",
+      "sha256": "b987172a5e142e4b36b4735f434ec84243cadc375cf8a16216248f11f15902c3",
+      "bytes": 1260
+    },
+    {
+      "url": "https://web.splus.ir/6442.b244183d5b7f52cfafc6.js",
+      "sha256": "41425e819adbbcd3475b967130b523fb07e408dc3295fda881e2fed89d2ca379",
+      "bytes": 642
+    },
+    {
+      "url": "https://web.splus.ir/6473.b15c8a712ade46aefa38.js",
+      "sha256": "f24baa3c3f47208420e577900845e7555f3854312fe8817f224a2ca71bf39ca6",
+      "bytes": 2566
+    },
+    {
+      "url": "https://web.splus.ir/667.00759f94d2bb49e99432.js",
+      "sha256": "46204f50251a1ea4db4d11925604afc342e7794592c611355d6f64abff1c94d5",
+      "bytes": 67978
+    },
+    {
+      "url": "https://web.splus.ir/6685.1155cde210caec0b2bb0.js",
+      "sha256": "f1671b9cd107579a3c4059b1b8dd674058e68bdab88b13688444d9e02f5c8665",
+      "bytes": 1923
+    },
+    {
+      "url": "https://web.splus.ir/6686.91ae8501496075007442.js",
+      "sha256": "e44ff647c02c8e4ceea2d489a7e10b76732aa5de03b05928d3c32eb0c095d911",
+      "bytes": 821
+    },
+    {
+      "url": "https://web.splus.ir/6708.3c5df44a13f01f439df1.js",
+      "sha256": "f8414b42f73a71a684e24b789139feca44deeac833c41a69c54403d7fb23f261",
+      "bytes": 9855
+    },
+    {
+      "url": "https://web.splus.ir/6726.cf2aa0cb720f31e5aff4.js",
+      "sha256": "789bdcb942a6ed10df38c154e1eeadf4ceaa0fc719ce78a4be77387045d58545",
+      "bytes": 2786
+    },
+    {
+      "url": "https://web.splus.ir/676.2703bb26a966cfb3211c.js",
+      "sha256": "2e0786e8708de6e62e44951d1f9d75c6eed0f02eec4901343b723019d05c3007",
+      "bytes": 661
+    },
+    {
+      "url": "https://web.splus.ir/6802.7509af568fe51078a186.js",
+      "sha256": "6896a2a254d27f79d5061015294ccd23e828d1730f6da29cb95e4fcb920d9f7b",
+      "bytes": 2070
+    },
+    {
+      "url": "https://web.splus.ir/6827.f080208cbc1d7a0cece7.js",
+      "sha256": "9c0bb41709b52e18baf817d0cb60d33e53230f1293e9425735b9f64b613e89c1",
+      "bytes": 2367
+    },
+    {
+      "url": "https://web.splus.ir/683.768b635e79aeb552cdf2.js",
+      "sha256": "b46cefa988a044c5a5bf57e9bb10156973d865b3fdfb677ae93e97add45bd288",
+      "bytes": 326
+    },
+    {
+      "url": "https://web.splus.ir/6860.4b235f9ca632e9908662.js",
+      "sha256": "2931c6ebe1bf28fa6acc46cb67aa365e05b246e2d46555e79dd5134e227b9ed0",
+      "bytes": 1309
+    },
+    {
+      "url": "https://web.splus.ir/6869.0663afce435aa5b496da.js",
+      "sha256": "ac665c50e239fe0757ba20a5d11216b18dd4df901ee16ddc9fcf879189e3ae51",
+      "bytes": 494
+    },
+    {
+      "url": "https://web.splus.ir/69.0f977cb4626123d73095.js",
+      "sha256": "6ce27ac625b9076d9cf7c1802a53dcaa8562d2b89fe24a41aa5522dcc6143565",
+      "bytes": 345
+    },
+    {
+      "url": "https://web.splus.ir/6947.0d9dae0885e56379da07.js",
+      "sha256": "b129b1e26a404770bd677f7eb8425daad795011419fa5469ec3d40c1df153716",
+      "bytes": 4434
+    },
+    {
+      "url": "https://web.splus.ir/7001.056562c6fb4ee9b929e0.js",
+      "sha256": "006c242d233aa096d86d765df694dc09034de0e0396cd7118ca5c6f9a40a8c5c",
+      "bytes": 3059
+    },
+    {
+      "url": "https://web.splus.ir/7083.0ff6e125d5468487334b.js",
+      "sha256": "049c5b2958c4ac5f6e3c6320bfd56272445f39fd890976f0594eff6e188d7720",
+      "bytes": 7947
+    },
+    {
+      "url": "https://web.splus.ir/7120.f6e03f0a00c8be8dd2bb.js",
+      "sha256": "664fb6539d6634d0367ca049bb265d64fcfb35e32f9e2f9c947871257ef6f542",
+      "bytes": 10265
+    },
+    {
+      "url": "https://web.splus.ir/7244.769b52a953742223bf80.js",
+      "sha256": "57b86f74901721726e23357522b2ae048444bec94098b4505cfe1510f67d47fd",
+      "bytes": 1983
+    },
+    {
+      "url": "https://web.splus.ir/7276.ed914557a081db0b4745.js",
+      "sha256": "a81d6fac53792e9667bd0533da63a04a411586cacb60a1000bc95fb30c781678",
+      "bytes": 1723
+    },
+    {
+      "url": "https://web.splus.ir/7298.b223b9ebddcd95d517a6.js",
+      "sha256": "5cae80ae6bdea2196073f2c952811a1e2b49c9e95e06a6a7477ab63f2757c901",
+      "bytes": 6487
+    },
+    {
+      "url": "https://web.splus.ir/7357.47ff33c15f1847a569d0.js",
+      "sha256": "ae678e42324d4bb26f7b338c60def0058ec3711cf072e52bfacff18580394a98",
+      "bytes": 320
+    },
+    {
+      "url": "https://web.splus.ir/7405.4a1d91ea692bdd8633a7.js",
+      "sha256": "8870af0c9c9a6cad8bc5b65e3d4ab32dc5501effc680a09728cb6f940521073e",
+      "bytes": 13121
+    },
+    {
+      "url": "https://web.splus.ir/7424.432f6df73da5aef2d31e.js",
+      "sha256": "a88c9c169af2d244b83d021a1cffae62cdb568c9a5f2d3e7f18c48d5eb48a8fd",
+      "bytes": 4023
+    },
+    {
+      "url": "https://web.splus.ir/7487.f33bf2bbc7f85015f2ef.js",
+      "sha256": "735027d50295116fff5233ad0adc2f8dd210077f63b5043604a67f6bf7971877",
+      "bytes": 4508
+    },
+    {
+      "url": "https://web.splus.ir/7499.43263062f2fa6fe60ac3.js",
+      "sha256": "5cb1137921c33d04ea2190808801d960410cac5df2497475be530c00a8edf18e",
+      "bytes": 3943
+    },
+    {
+      "url": "https://web.splus.ir/7532.303f055e16274a596770.js",
+      "sha256": "eeaed064d578f295ccae4b3a84ca1aa9a545e13314b322c29569e87c4590f20b",
+      "bytes": 574441
+    },
+    {
+      "url": "https://web.splus.ir/7561.31ad84b04905ff77e77f.js",
+      "sha256": "26fa5b2adf35a02f2442dfe157567b9ae07774687265760e15fe4c575f2f881e",
+      "bytes": 757
+    },
+    {
+      "url": "https://web.splus.ir/7586.0fc9ecfb8675c808614b.js",
+      "sha256": "451ff40c4b21a1a4b0ab62fab32db4078b1ea3d5e04fd3d48bd107bbdc8b4524",
+      "bytes": 6118
+    },
+    {
+      "url": "https://web.splus.ir/7594.79ac62ff337d8d880888.js",
+      "sha256": "1e245adc3a169c8ef91d31bd6f99f1bfaa663c23512ee5830af42453d09dd556",
+      "bytes": 16635
+    },
+    {
+      "url": "https://web.splus.ir/760.d8369494f80d4032df5a.js",
+      "sha256": "3934ea094ed300f0af1f100690721ec26a42763bc6ca2d30f2cf74046cde71d8",
+      "bytes": 1729
+    },
+    {
+      "url": "https://web.splus.ir/7612.1d20b3b635066796725b.js",
+      "sha256": "27917894b1cdd41a6c8461ec8c6c29201bc012eb40ba8eee696a0d0cad378509",
+      "bytes": 350
+    },
+    {
+      "url": "https://web.splus.ir/7617.75c8dec63faf018227f2.js",
+      "sha256": "3429a55ccb03d9c2c20a1160a9ce68c44b3e88674dadadf7b91c91afa4032649",
+      "bytes": 790
+    },
+    {
+      "url": "https://web.splus.ir/7643.15d989c7db83f79f600e.js",
+      "sha256": "be196ba7fb0b8e04f6df1ff0fbef493b7c9582856e783946b0b9126a9ed003a7",
+      "bytes": 224
+    },
+    {
+      "url": "https://web.splus.ir/768.041368bfb4e7a34adacf.js",
+      "sha256": "47c9e9330aa02e63d7a9333d27ae513f7c952e2645fee30060c949a9b5cc1488",
+      "bytes": 3038
+    },
+    {
+      "url": "https://web.splus.ir/7688.af0dc1ace79da91f5be3.js",
+      "sha256": "47c6af801fcf1a728de1d66b3bdaa947b94a65a0af5e4f7abac7d3aa786d3fba",
+      "bytes": 876
+    },
+    {
+      "url": "https://web.splus.ir/7738.1dcf1760941fd3e5a3bc.js",
+      "sha256": "85db97abb803ea5568c6e311992869638c3d7ebca69ba437c92cde3c2de81d0d",
+      "bytes": 1446
+    },
+    {
+      "url": "https://web.splus.ir/7768.3fc75e1dc33cc25bb0fd.js",
+      "sha256": "717b5ef2fb2d90e3187263b560513c8c0dd52c304b0321f43025a71dd86ee43c",
+      "bytes": 312180
+    },
+    {
+      "url": "https://web.splus.ir/7854.4bb03112b219662e081d.js",
+      "sha256": "4d73f4e25589ed2bdcb7d804109298e6710faf3fc34cef807a6e365950b7ec57",
+      "bytes": 6685
+    },
+    {
+      "url": "https://web.splus.ir/7880.88f816341b54237e64a7.js",
+      "sha256": "36e07186c710920b5c6e44205dc955d09959e29a1cd7504a44b231d70ee36ec1",
+      "bytes": 2029
+    },
+    {
+      "url": "https://web.splus.ir/7901.675509edb1a5207e014f.js",
+      "sha256": "fc83d4c268b8f3b2ffc4556b88de78ece9094df084d3b456c48668abd88baae8",
+      "bytes": 695
+    },
+    {
+      "url": "https://web.splus.ir/7939.ff1dc61381c31ccd0fe2.js",
+      "sha256": "257d38406a05c0c03d5ec31ee1ead5b38142c64506bd6e4591653ebbea53e60c",
+      "bytes": 13067
+    },
+    {
+      "url": "https://web.splus.ir/7972.33dc5818d49bbff74fd2.js",
+      "sha256": "958286fd3782cb6db8d5e56e20ab9bf3efd3c600c1fd1a06bf2325d2aabee3d3",
+      "bytes": 1630
+    },
+    {
+      "url": "https://web.splus.ir/7978.dcaa2a07ded9820a0c80.js",
+      "sha256": "82c638ed3159424104a86da528444ef0e3cc37da0dc09ff99186443faa43ae9c",
+      "bytes": 2751
+    },
+    {
+      "url": "https://web.splus.ir/8043.f1454711ee887e1909ab.js",
+      "sha256": "bffdea994fceeafb529c01dad120f8ab1fd250c31b0382c639ee6813ac9d6695",
+      "bytes": 19140
+    },
+    {
+      "url": "https://web.splus.ir/8062.8ecef83ec46e797196ab.js",
+      "sha256": "34bf2af057abf2dac0b4cbed5411cd46670d24c2f0a606f17823ec74d97382a8",
+      "bytes": 3518
+    },
+    {
+      "url": "https://web.splus.ir/8074.95b00e54b5a471996a60.js",
+      "sha256": "081cc3e39465b89502d12a76534118288c5147284f6378fc123e279e09d4dca6",
+      "bytes": 8348
+    },
+    {
+      "url": "https://web.splus.ir/8100.d79ff84d24f76f296e72.js",
+      "sha256": "bca00ee47be36be84b56e61b5bc1001938209b2d8912e4c4bec71535cd5bb063",
+      "bytes": 2214
+    },
+    {
+      "url": "https://web.splus.ir/8114.bda530f3f3db26d2d205.js",
+      "sha256": "a5515ae9cb3fa53a0fd4b1fa90291f3342c7b4ffdbbdb85f1c1d74a42a86c2fa",
+      "bytes": 1982
+    },
+    {
+      "url": "https://web.splus.ir/8142.d7d8606c7fe3c0a2167a.js",
+      "sha256": "ae3b7e293d506376d4df2e4bc7d6420638a35edfb64273aa74ce689084aa3d58",
+      "bytes": 43057
+    },
+    {
+      "url": "https://web.splus.ir/8150.2fc09a4142443e78f69f.js",
+      "sha256": "071343f51007d962a8bb1a21415a336ef5ae373e46db31e6280e594976e29098",
+      "bytes": 5786
+    },
+    {
+      "url": "https://web.splus.ir/8169.37ef322ee6b2b1e1047b.js",
+      "sha256": "6dbe157230bbc513d8c0f854bd3fd26338333e2c694049d9f42d7cdb718c2efa",
+      "bytes": 1433
+    },
+    {
+      "url": "https://web.splus.ir/8201.539042beb1292252e450.js",
+      "sha256": "6a5da8e8395047d5d1958c0a60fa47d94db12197e683e7dc17d28dc4dc8b34b7",
+      "bytes": 1963
+    },
+    {
+      "url": "https://web.splus.ir/8213.3b9b0a23fbf9c2184786.js",
+      "sha256": "4565918db62e65825581fc9638e9826b36116373884d0c2d9dc3a88f72bb0ef0",
+      "bytes": 9956
+    },
+    {
+      "url": "https://web.splus.ir/8214.a27a36f8a0783b5ae7c8.js",
+      "sha256": "bf955020cbf9f909192848c89c935b0912903f0b79dacb052d37e7675fad5e63",
+      "bytes": 360
+    },
+    {
+      "url": "https://web.splus.ir/8233.e60d9630ff00bc0f4b2f.js",
+      "sha256": "f716498853282e2dcaa167b892e229ae2c07db247948e52029ac1f39e1b12b2c",
+      "bytes": 238
+    },
+    {
+      "url": "https://web.splus.ir/8308.fed2230f6d6d6b1122ca.js",
+      "sha256": "f463cc17c40bf9a7afb83ec4b1dd90fbe6cd6124ba77999e5cfaccb735427942",
+      "bytes": 8429
+    },
+    {
+      "url": "https://web.splus.ir/8349.ff104ffc3ac2715387e8.js",
+      "sha256": "0ff707e04450d2ee3fcb822d10dc5b4653e0d1b9f89b7f09357debeee672f08c",
+      "bytes": 2494
+    },
+    {
+      "url": "https://web.splus.ir/835.7a01d882a569acaf9f75.js",
+      "sha256": "ecd4fb0143f91f57eb446c73376624c34c3328dd17b12d5f41e17da363346726",
+      "bytes": 2223
+    },
+    {
+      "url": "https://web.splus.ir/8393.0e24bf753878382ee01c.js",
+      "sha256": "20e1db3c72b83b78b935c855a755de3b8749fe07821ddee5270cff3d693b3d01",
+      "bytes": 830
+    },
+    {
+      "url": "https://web.splus.ir/8602.b84a24ddbb88690b2be5.js",
+      "sha256": "b659eada0ca783df8fea10dda183e570d353877e331aae6f490e46d88105ea0b",
+      "bytes": 3147
+    },
+    {
+      "url": "https://web.splus.ir/8804.e86454ba24edcbf0406e.js",
+      "sha256": "fe9ad83c0d8dfc36aa3fc9408a156c07b38401c384f78f7bee16a299b3f00b3d",
+      "bytes": 56459
+    },
+    {
+      "url": "https://web.splus.ir/8843.6a6e3ab78c32eb40488e.js",
+      "sha256": "be3202e82cfa7d2445c22d6d2b6036f18ada5ed6a23115dcfe0d0632448c882c",
+      "bytes": 16826
+    },
+    {
+      "url": "https://web.splus.ir/8924.c273fdc3918b9f27ee03.js",
+      "sha256": "8ffd8897ab7b2078dfe322e4d3090efc99ca32678b6d6568b1a840d3e2445aba",
+      "bytes": 8315
+    },
+    {
+      "url": "https://web.splus.ir/8980.e53e010086ecb17610eb.js",
+      "sha256": "d51775d69687eeea8d333336f896ae9694450d1cdbe7edf8b6f5b7b6ea219a59",
+      "bytes": 1774
+    },
+    {
+      "url": "https://web.splus.ir/90.71effaeedb0b2e6635f7.js",
+      "sha256": "f55494ba12c7631862c51307157333637bb05a10ae37166e9bdd34b25cecb416",
+      "bytes": 2910
+    },
+    {
+      "url": "https://web.splus.ir/9004.cdf9e6a8b0f58789f67c.js",
+      "sha256": "65b941ca606aae60ce8855b8b93951d3aa16224f4215fbd6324d1f53caa13c57",
+      "bytes": 3674
+    },
+    {
+      "url": "https://web.splus.ir/9030.0935c025912d2ebe8784.js",
+      "sha256": "94b77038592371d154619e53e72e609f87e95e9fd5bc2720eeac37fe97380570",
+      "bytes": 1386
+    },
+    {
+      "url": "https://web.splus.ir/9072.650ef100b667751f74f6.js",
+      "sha256": "671bcf3899612d5099272a40627dd5b5a66a4af9e008adebaa5cc687954b6f13",
+      "bytes": 2946
+    },
+    {
+      "url": "https://web.splus.ir/9141.a3675ac3961839223dbb.js",
+      "sha256": "11c5b0438d0cd31c0e66cd528129352e2d7786ddaa0e1350bdc58ad4942a263d",
+      "bytes": 274
+    },
+    {
+      "url": "https://web.splus.ir/9183.8214807fa41e564b6377.js",
+      "sha256": "f1bc7fd6f8d23c6834e7f7378a8d592175fd309e3abb975ee4cce80b22371518",
+      "bytes": 769
+    },
+    {
+      "url": "https://web.splus.ir/9217.f8fba47c26328e94421a.js",
+      "sha256": "edc04755a1d6d3a2d5b9da9ae154f53804d008b5b2fa8dfa22887bb72e1ff326",
+      "bytes": 482534
+    },
+    {
+      "url": "https://web.splus.ir/9238.bb13ae45a299df07c525.js",
+      "sha256": "1b2914835e7fdcc96877e747b91b1864ea65b8b4a86ffe7e425811efc72ec003",
+      "bytes": 521
+    },
+    {
+      "url": "https://web.splus.ir/9250.1e31ec9c83e61521640c.js",
+      "sha256": "f883b52dd3d49b7099a847457c91ef8b131b55115234a9abccce94a9d2b2ab83",
+      "bytes": 3041
+    },
+    {
+      "url": "https://web.splus.ir/9287.2bd9d44dd5e998d9fb0a.js",
+      "sha256": "6e3fb811df59bebc20518f4bfe27f2a4f3836511158a56a29ca554d89e65fa25",
+      "bytes": 543
+    },
+    {
+      "url": "https://web.splus.ir/9295.1b2432a5f0dc78c2dc1f.js",
+      "sha256": "59d9b105a97435b76dd805868038d8bef05d17e590b945f1ff9f5a73a56fa675",
+      "bytes": 509
+    },
+    {
+      "url": "https://web.splus.ir/9359.64e870a36c1d87199b32.js",
+      "sha256": "19dec1462ab3ff7fe4821a117d79243df6b0d756705692860e4eda3e4604ba79",
+      "bytes": 2155
+    },
+    {
+      "url": "https://web.splus.ir/9375.8deaf47c5d5ef6e80dd8.js",
+      "sha256": "2120e976464d329fb37a856d900a7730aeb6b174eec7da08e17c9ec1686199a3",
+      "bytes": 604
+    },
+    {
+      "url": "https://web.splus.ir/9451.e29430e658f5c2fb9e9f.js",
+      "sha256": "3c2f3a1a2cf086fa66f701b58918f1a4fce6c610b70ab0acc8940ed05954d016",
+      "bytes": 823678
+    },
+    {
+      "url": "https://web.splus.ir/947.9d0d2223d23336ca8f53.js",
+      "sha256": "2fd1739be0bb45f9dbb19f0846b4ca432b828e025a2fb80e5f994f407fa1368e",
+      "bytes": 4083
+    },
+    {
+      "url": "https://web.splus.ir/9549.784148d1b9815ef74ca1.js",
+      "sha256": "6bc8d9fe4c89ea6eebccfedf2708f2eea4e390f236328bae5225ed31e0b7c093",
+      "bytes": 18981
+    },
+    {
+      "url": "https://web.splus.ir/9623.be53e3d1474f767a476b.js",
+      "sha256": "2675c4e07e778aae0daabe8ecde533561e27f4afca451fb41bef4d5bd60c7fe4",
+      "bytes": 3385
+    },
+    {
+      "url": "https://web.splus.ir/9677.884d24a3476694893a5f.js",
+      "sha256": "1d5fb6ded6dd0e5f8244b39a7d4f5b2f09f857ac6108787cd033c3c202c4eabb",
+      "bytes": 1992
+    },
+    {
+      "url": "https://web.splus.ir/970.81ec9b5a7f7ac8484dbb.js",
+      "sha256": "3e6fc8172f2c84bb4ad442ec95b7b7a11008b10365f3abed7dad89ce14873fd3",
+      "bytes": 1796
+    },
+    {
+      "url": "https://web.splus.ir/9710.9fd45d3d8ba0c72a1299.js",
+      "sha256": "bcc302ad9579497ea0aeeac3bea7a5fa4239f90e7c31d0aece3e1d86e1b20c1b",
+      "bytes": 2555
+    },
+    {
+      "url": "https://web.splus.ir/9753.d1f1c33b88e8d99076b1.js",
+      "sha256": "2630afa5aadbee70b3a0e5d17bc37c1a920af57cad4fa58c0346172fdf9a05f0",
+      "bytes": 732
+    },
+    {
+      "url": "https://web.splus.ir/9761.ab038f1f148ff87964e3.js",
+      "sha256": "7ac00a11113141113e674684d869eb1cfe9201d43cd8171a53b65e8228777286",
+      "bytes": 7560
+    },
+    {
+      "url": "https://web.splus.ir/9849.da6f3f337cbcbf41e678.js",
+      "sha256": "64aba5e7293cbcaf56030e80d716a340bdb13ebd0d1c5993310ccadbe807f87a",
+      "bytes": 3477
+    },
+    {
+      "url": "https://web.splus.ir/9867.58f977f61bc48b314bd6.js",
+      "sha256": "0e9ad01086638d6cdd78bcc241c6c7596232f88f32cd39ec6d76cee69b147fea",
+      "bytes": 11056
+    },
+    {
+      "url": "https://web.splus.ir/9869.e7e3b153894e4f60c773.js",
+      "sha256": "60c72f1d99a1fde75ac31c8a47c9892365fe9dae2c8ccbe9143191f9bc618878",
+      "bytes": 1817
+    },
+    {
+      "url": "https://web.splus.ir/9998.a03c70647d32c1c09807.js",
+      "sha256": "2b821f4bddfc1a6780521d5d837665c8eec4853bde131587467b7892faa7cd4b",
+      "bytes": 1019
+    },
+    {
+      "url": "https://web.splus.ir/main.6f45955b86113fb74554.js",
+      "sha256": "7ec2edf0800eaf853f0034ce7e5b8791c862ff7edc19db02e7512b91848b5919",
+      "bytes": 891165
+    }
+  ],
+  "source_url_strings": [
+    "http://${a}",
+    "http://${e}:${t}/apiw1${n?",
+    "http://92.42.50.29",
+    "http://localhost",
+    "http://musicbrainz.org",
+    "http://www.w3.org/1999/xhtml",
+    "http://www.w3.org/1999/xlink",
+    "http://www.w3.org/2000/svg",
+    "http://www.w3.org/ns/ttml#styling",
+    "https://${e}",
+    "https://${e}/_websync_?",
+    "https://${e}:${t}/apiw1${n?",
+    "https://${n}",
+    "https://${s}",
+    "https://ai.splus.ir/",
+    "https://aomedia.org/emsg/ID3",
+    "https://aomediacodec.github.io/av1-rtp-spec/#dependency-descriptor-rtp-header-extension",
+    "https://api.stripe.com/v1/tokens${s}",
+    "https://bing.com/maps/default.aspx",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/mediaDevices",
+    "https://faq.splus.ir/",
+    "https://game.splus.ir/",
+    "https://github.com/highlightjs/highlight.js/issues/2277",
+    "https://github.com/highlightjs/highlight.js/wiki/security",
+    "https://l.splus.ir/",
+    "https://lenz.splus.ir",
+    "https://map.ir/static?width=300&height=250&zoom_level=15&markers=color:origin|label:${n||",
+    "https://maps.apple.com",
+    "https://maps.google.com/maps",
+    "https://nshn.ir",
+    "https://splus-a-host",
+    "https://splus.ir/",
+    "https://splus.ir/meet/",
+    "https://splus.ir/p/faq",
+    "https://splus.ir/p/privacy",
+    "https://splus.ir/tos/mini-apps",
+    "https://ss3.4sqi.net/img/categories_v2/${e}_88.png",
+    "https://tgb.smart-glocal.com/cds/v1/tokenize/card",
+    "https://v8.splus.ir",
+    "https://v8.splus.ir/?landing=1113",
+    "https://web.splus.ir/",
+    "https://www.openstreetmap.org",
+    "ws://${e}:${t}/apiws${n?",
+    "wss://${e}:${t}/apiws${n?"
+  ],
+  "note": "URL strings are source evidence, not verified service endpoints. Templates, third-party links and product links are included for audit."
+}
