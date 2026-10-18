@@ -179,7 +179,7 @@ FRIENDLY = {
 
 SAMPLES = {
     'INSTALL': ('bash', 'python -m venv .venv\n# Windows PowerShell\n.\\.venv\\Scripts\\Activate.ps1\n# Linux / macOS: source .venv/bin/activate\npython -m pip install "git+https://github.com/HamidrezaBakhshi8118/FNC-Splus.git@main"'),
-    'INSTALL_VIDEO': ('bash', 'python -m pip install "FNC-Splus[video] @ git+https://github.com/HamidrezaBakhshi8118/FNC-Splus.git@main"'),
+    'INSTALL_VIDEO': ('bash', 'python -m pip install --upgrade "git+https://github.com/HamidrezaBakhshi8118/FNC-Splus.git@main"'),
     'LOGIN': ('bash', 'fnc-splus login personal --data-dir sessions\nfnc-splus diagnose personal --data-dir sessions'),
     'CHAT_IDS': ('python', 'dialogs = await client.get_chats(limit=100)\nfor dialog in dialogs:\n    print(dialog.id, dialog.name)\n\n# عدد را از خروجی واقعی بالا انتخاب کنید.\n# مقصد عمومی با نام کاربری هم قابل استفاده است:\nsent = await client.send("@your_channel", "سلام")\nprint("message_id:", sent.id, "chat_id:", sent.chat_id)'),
     'SESSION_PATH': ('python', 'from pathlib import Path\nfrom fnc_splus import Client\n\nBASE_DIR = Path(__file__).resolve().parent\nclient = Client("personal", data_dir=BASE_DIR / "sessions")\nprint(client.session_path)'),

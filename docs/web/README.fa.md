@@ -5,7 +5,7 @@
 از ریشهٔ پروژه و پس از نصب editable:
 
 ```bash
-python -m pip install -e ".[dev,video]"
+python -m pip install -e ".[dev]"
 python scripts/build_docs.py
 python scripts/build_docs.py --check
 python -m pytest tests/test_docs.py

@@ -64,7 +64,7 @@ class Client(NativeMethods):
         self._engine_settings = dict(connection=connection, connection_retries=connection_retries,
                                      request_retries=0, retry_delay=1, flood_sleep_threshold=0,
                                      raise_last_call_error=True, catch_up=catch_up,
-                                     sequential_updates=True, app_version='FNC-Splus 0.1.0',
+                                     sequential_updates=True, app_version='FNC-Splus 0.1.1',
                                      device_model='FNC-Splus Python', lang_code='fa')
         self._handlers = []
         self._tasks = []
@@ -365,7 +365,7 @@ class Client(NativeMethods):
         try:
             import av
         except ImportError:
-            raise ImportError('Video metadata requires: pip install "FNC-Splus[video]"') from None
+            raise ImportError('PyAV dependency is missing; reinstall FNC-Splus with pip dependencies enabled') from None
         with av.open(str(video)) as source:
             stream = next(iter(source.streams.video), None)
             if stream is None:

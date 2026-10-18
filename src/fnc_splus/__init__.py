@@ -10,7 +10,7 @@ from .exceptions import (
 from .models import Delivery, Operation, QueuedOperation
 from .sync import SyncClient
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 AsyncClient = Client
 
 __all__ = [

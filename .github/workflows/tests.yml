@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-      - run: python -m pip install ".[dev,video]"
+      - run: python -m pip install ".[dev]"
       - run: python -m ruff check src scripts tests
       - run: python scripts/build_docs.py --check
       - run: python -m pytest

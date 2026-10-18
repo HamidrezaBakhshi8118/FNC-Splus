@@ -7,6 +7,9 @@ phone/OTP login, persistent message operations, message events and an official-w
 pip install "git+https://github.com/HamidrezaBakhshi8118/FNC-Splus.git@main"
 ```
 
+The default installation includes photo, video and album dependencies, including
+PyAV. No `[video]` extra is needed. The old extra name remains a compatibility alias.
+
 ```python
 import asyncio
 from fnc_splus import Client
