@@ -29,6 +29,11 @@ resource ownership, encrypted session adapter, durable queues and readable API.
 See [third-party notices](THIRD_PARTY_NOTICES.md), [Persian guide](docs/USAGE.fa.md),
 [protocol evidence](docs/PROTOCOL.fa.md) and [validation](docs/TESTING.fa.md).
 
+Complete Persian documentation: [guide and client API](https://hamidrezabakhshi8118.github.io/splus/),
+[all 374 RPC methods](https://hamidrezabakhshi8118.github.io/splus/api.html),
+and [TL constructors](https://hamidrezabakhshi8118.github.io/splus/types.html).
+The static site lives in `docs/site`; rebuild it with `python scripts/build_docs.py`.
+
 Development status: initial implementation. Source discovery and simulated tests
 do not imply every provider method is verified against a real account.
 

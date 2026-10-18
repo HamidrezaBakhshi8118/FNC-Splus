@@ -1,0 +1,374 @@
+invokeAfterMsg|اجرای درخواست داخلی پس از پیام پروتکلی مشخص؛ ابزار پیشرفتهٔ وابستگی MTProto.
+initConnection|معرفی مشخصات برنامه و دستگاه همراه یک درخواست داخلی به سرور.
+invokeWithLayer|اجرای یک درخواست با لایهٔ مشخص طرح TL.
+req_pq|شروع مذاکرهٔ کلید با nonce؛ مخصوص اتصال بدون احراز هویت، خارج از Client.invoke.
+req_pq_multi|شروع مذاکرهٔ کلید چندمرکزی؛ مخصوص اتصال بدون احراز هویت.
+req_pq_multi_new|سازندهٔ اختصاصی مشاهده‌شده در وب سروش برای شروع مذاکرهٔ کلید.
+req_DH_params|درخواست پارامترهای دیفی–هلمن در مرحلهٔ ساخت کلید، خارج از RPC حساب.
+set_client_DH_params|ارسال پارامترهای کلاینت برای تکمیل مذاکرهٔ کلید.
+destroy_auth_key|حذف کلید اتصال؛ درخواست کنترلی است و Client.invoke آن را نمی‌پذیرد.
+ping|درخواست پاسخ pong برای بررسی زنده‌بودن اتصال MTProto.
+ping_delay_disconnect|درخواست pong با زمان قطع اتصال در صورت نبود فعالیت.
+auth.sendCode|درخواست کد ورود برای شماره؛ ورود عادی را به Client بسپارید تا مدیریت سشن حفظ شود.
+auth.signUp|ساخت حساب با مشخصات و اطلاعات تأیید شماره؛ وجود متد به معنی پشتیبانی زنده نیست.
+auth.signIn|تأیید اطلاعات ورود و دریافت مجوز حساب.
+auth.logOut|خروج از مجوز فعلی حساب؛ با close که فقط اتصال را می‌بندد متفاوت است.
+auth.resetAuthorizations|لغو سایر مجوزهای حساب طبق مجوز سرور.
+auth.exportAuthorization|صدور مجوز انتقال به مرکز دادهٔ دیگر؛ خروجی دادهٔ حساس احراز هویت است.
+auth.importAuthorization|واردکردن مجوز انتقال‌یافته به مرکز دادهٔ مقصد.
+auth.bindTempAuthKey|اتصال کلید موقت به کلید دائمی برای استفادهٔ پروتکل.
+auth.checkPassword|بررسی اثبات رمز ورود دومرحله‌ای حساب؛ ورودی شیء SRP است.
+auth.requestPasswordRecovery|درخواست فرایند بازیابی رمز ورود دومرحله‌ای.
+auth.resendCode|درخواست دوبارهٔ کد ورود با phone_code_hash قبلی.
+auth.cancelCode|لغو درخواست کد ورود مشخص.
+auth.dropTempAuthKeys|حذف کلیدهای موقت به‌جز فهرست استثناها.
+auth.exportLoginToken|ساخت توکن ورود برای جریان ورود با توکن/QR.
+auth.importLoginToken|تأیید توکن ورود صادرشده.
+auth.importWebTokenAuthorization|واردکردن مجوز مبتنی بر توکن وب.
+auth.sendDeleteAccountCode|درخواست کد تأیید برای حذف حساب؛ عملیات حساس حساب.
+auth.resendDeleteAccountCode|درخواست دوبارهٔ کد تأیید حذف حساب.
+auth.deleteAccount|حذف حساب با اطلاعات تأیید لازم؛ اثر این عملیات را پیش از استفاده بررسی کنید.
+account.registerDevice|ثبت دستگاه و توکن اعلان آن برای حساب.
+account.unregisterDevice|لغو ثبت دستگاه برای دریافت اعلان‌ها.
+account.updateNotifySettings|تغییر تنظیمات اعلان برای محدودهٔ مشخص.
+account.getNotifySettings|خواندن تنظیمات اعلان محدودهٔ مشخص.
+account.updateProfile|تغییر نام، نام خانوادگی یا توضیحات حساب.
+account.updateStatus|به‌روزرسانی وضعیت آنلاین/آفلاین حساب.
+account.getWallPapers|دریافت فهرست کاغذدیواری‌ها با پشتیبانی از hash کش.
+account.reportPeer|ارسال گزارش دربارهٔ یک کاربر، گروه یا کانال.
+account.checkUsername|بررسی امکان استفاده از نام کاربری حساب.
+account.updateUsername|تغییر نام کاربری حساب.
+account.getPrivacy|خواندن قواعد حریم خصوصی یک کلید.
+account.setPrivacy|ثبت قواعد حریم خصوصی یک کلید.
+account.getAuthorizations|دریافت نشست‌ها و مجوزهای فعال حساب.
+account.resetAuthorization|لغو یک مجوز مشخص حساب با شناسهٔ hash آن.
+account.getPassword|خواندن پارامترهای مورد نیاز ورود دومرحله‌ای؛ رمز خام برگردانده نمی‌شود.
+account.getPasswordSettings|خواندن تنظیمات محافظت‌شدهٔ رمز با اثبات SRP.
+account.updatePasswordSettings|تغییر تنظیمات ورود دومرحله‌ای با اثبات رمز و تنظیمات جدید.
+account.sendConfirmPhoneCode|درخواست کد تأیید شماره در جریان تأیید حساب.
+account.confirmPhone|تأیید شماره با hash و کد دریافتی.
+account.getTmpPassword|دریافت مجوز موقت مبتنی بر اثبات رمز؛ خروجی را محرمانه نگه دارید.
+account.getWebAuthorizations|خواندن مجوزهای وب مرتبط با حساب.
+account.resetWebAuthorization|لغو یک مجوز وب مشخص.
+account.resetWebAuthorizations|لغو همهٔ مجوزهای وب حساب.
+account.sendVerifyPhoneCode|درخواست کد بررسی شماره با تنظیمات کد.
+account.confirmPasswordEmail|تأیید ایمیل مربوط به رمز با کد تأیید.
+account.getContactSignUpNotification|خواندن وضعیت اعلان عضویت مخاطبان.
+account.setContactSignUpNotification|تغییر وضعیت اعلان عضویت مخاطبان.
+account.getNotifyExceptions|دریافت استثناهای تنظیمات اعلان.
+account.uploadWallPaper|ثبت فایل کاغذدیواری و تنظیمات آن روی حساب.
+account.getAutoDownloadSettings|خواندن تنظیمات دانلود خودکار رسانه.
+account.saveAutoDownloadSettings|ذخیرهٔ تنظیمات دانلود خودکار رسانه.
+account.setContentSettings|تغییر تنظیمات محتوایی حساب در صورت پشتیبانی سرور.
+account.getContentSettings|خواندن تنظیمات محتوایی حساب.
+account.getGlobalPrivacySettings|خواندن تنظیمات عمومی حریم خصوصی حساب.
+account.setGlobalPrivacySettings|ثبت تنظیمات عمومی حریم خصوصی حساب.
+account.reportProfilePhoto|گزارش یک عکس پروفایل مشخص.
+account.setAuthorizationTTL|تغییر مدت اعتبار مجوزهای حساب بر حسب روز.
+account.changeAuthorizationSettings|تغییر محدودیت درخواست‌ها و وضعیت تأیید یک مجوز.
+account.updateEmojiStatus|تغییر وضعیت ایموجی حساب.
+account.getRecentEmojiStatuses|خواندن وضعیت‌های ایموجی اخیر.
+account.reorderUsernames|تغییر ترتیب نام‌های کاربری حساب.
+account.toggleUsername|فعال یا غیرفعال‌کردن یک نام کاربری حساب.
+account.updateGender|به‌روزرسانی مقدار جنسیت در طرح اختصاصی حساب سروش.
+account.updateUserLocation|به‌روزرسانی موقعیت حساب طبق پارامترهای طرح سروش.
+account.updateBusinessWorkHours|تغییر ساعات کاری حساب تجاری.
+account.updateBirthday|تغییر تاریخ تولد حساب.
+account.saveMusic|ذخیره یا برداشتن موسیقی از فهرست موسیقی حساب.
+account.setMainProfileTab|تعیین زبانهٔ اصلی پروفایل.
+account.getSavedMusicIds|خواندن شناسه‌های موسیقی ذخیره‌شده.
+account.updatePersonalChannel|تعیین کانال شخصی مرتبط با پروفایل.
+users.getUsers|دریافت اطلاعات پایهٔ کاربران از ورودی‌های InputUser.
+users.getFullUser|دریافت اطلاعات کامل یک کاربر.
+users.getSavedMusic|خواندن صفحه‌ای از موسیقی‌های ذخیره‌شدهٔ کاربر.
+users.getSavedMusicByID|خواندن موسیقی‌های مشخص کاربر با شناسهٔ سند.
+conference.createConferenceCall|ایجاد تماس کنفرانسی طبق طرح اختصاصی سروش؛ برقراری رسانهٔ تماس جداگانه است.
+conference.resolveConferenceCall|حل شناسه یا اطلاعات پیوند کنفرانس.
+conference.getConferenceCall|دریافت وضعیت یک تماس کنفرانسی.
+conference.joinConferenceCall|عضویت در تماس کنفرانسی؛ این RPC به‌تنهایی پخش صوت/تصویر انجام نمی‌دهد.
+conference.leaveConferenceCall|خروج از تماس کنفرانسی.
+conference.discardConferenceCall|پایان‌دادن به تماس کنفرانسی با دسترسی لازم.
+conference.removeConferenceParticipant|حذف شرکت‌کننده از کنفرانس.
+conference.banConferenceParticipant|مسدودکردن شرکت‌کننده در کنفرانس.
+conference.unbanConferenceParticipant|رفع مسدودیت شرکت‌کننده در کنفرانس.
+conference.getBannedConferenceParticipants|دریافت شرکت‌کنندگان مسدودشدهٔ کنفرانس.
+conference.getActiveConferenceCalls|خواندن فهرست تماس‌های کنفرانسی فعال.
+conference.muteConferenceParticipant|تغییر وضعیت بی‌صدا بودن شرکت‌کنندهٔ کنفرانس.
+conference.setConferenceRating|ثبت امتیاز و توضیح برای تماس کنفرانسی.
+contacts.getContacts|خواندن فهرست مخاطبان حساب با hash کش.
+contacts.importContacts|واردکردن مخاطبان از فهرست شماره و مشخصات.
+contacts.deleteContacts|حذف مخاطبان مشخص از حساب.
+contacts.block|مسدودکردن یک مخاطب یا peer.
+contacts.unblock|رفع مسدودیت یک مخاطب یا peer.
+contacts.getBlocked|خواندن فهرست مسدودشدگان با صفحه‌بندی.
+contacts.search|جست‌وجوی کاربران/مخاطبان با عبارت و سقف نتیجه.
+contacts.resolveUsername|تبدیل نام کاربری به اطلاعات peer و شناسه‌های لازم.
+contacts.getTopPeers|دریافت مخاطبان و گفتگوهای پرتکرار با فیلتر نوع.
+contacts.addContact|افزودن یک کاربر موجود به مخاطبان با نام و شماره.
+contacts.resolvePhone|حل یک شماره به اطلاعات peer در محدودهٔ مجاز سرور.
+contacts.editCloseFriends|ثبت فهرست دوستان نزدیک.
+contacts.getBirthdays|خواندن تولدهای مخاطبان در صورت پشتیبانی سرور.
+messages.getMessages|دریافت پیام‌های مشخص با InputMessage؛ پیام کانال متد جداگانه دارد.
+messages.getDialogs|خواندن فهرست گفتگوها با offset و فیلتر پوشه.
+messages.getHistory|خواندن تاریخچهٔ یک گفتگو با صفحه‌بندی و بازهٔ شناسه.
+messages.search|جست‌وجوی پیام در یک گفتگو با متن، فرستنده، فیلتر و بازهٔ زمانی.
+messages.readHistory|علامت‌زدن تاریخچهٔ گفتگو به‌عنوان خوانده‌شده تا max_id.
+messages.deleteHistory|پاک‌کردن تاریخچهٔ گفتگو با پرچم‌های مشخص‌شده.
+messages.deleteMessages|حذف پیام‌های مشخص و تعیین revoke در صورت مجازبودن.
+messages.receivedMessages|اعلام دریافت پیام‌ها تا شناسهٔ مشخص به سرور.
+messages.setTyping|ارسال وضعیت فعالیت مانند تایپ یا آپلود به گفتگو.
+messages.sendMessage|ارسال متن با reply، entity، markup و سایر پرچم‌های TL.
+messages.sendMedia|ارسال یک رسانه و متن همراه آن به مقصد.
+messages.forwardMessages|فوروارد مجموعهٔ پیام‌ها از مبدأ به مقصد با random ID مستقل.
+messages.reportSpam|گزارش هرزنامه برای یک گفتگو.
+messages.getPeerSettings|خواندن تنظیمات و قابلیت‌های رابطه با peer.
+messages.report|گزارش پیام‌ها با دلیل و توضیح مشخص.
+messages.getChats|خواندن اطلاعات پایهٔ گروه‌های مشخص.
+messages.getFullChat|خواندن اطلاعات کامل یک گروه معمولی.
+messages.editChatTitle|تغییر عنوان گروه معمولی.
+messages.editChatPhoto|تغییر عکس گروه معمولی.
+messages.addChatUser|افزودن کاربر به گروه معمولی با سقف تاریخچهٔ قابل مشاهده.
+messages.deleteChatUser|حذف کاربر از گروه معمولی و تنظیم حذف تاریخچه.
+messages.createChat|ساخت گروه معمولی با عنوان و کاربران اولیه.
+messages.getDhConfig|خواندن تنظیمات DH و دادهٔ تصادفی مورد نیاز پروتکل.
+messages.readMessageContents|اعلام خوانده‌شدن محتوای پیام‌های مشخص.
+messages.getStickers|دریافت استیکرهای مرتبط با ایموجی.
+messages.getAllStickers|خواندن مجموعه‌های استیکر نصب‌شده با hash کش.
+messages.getWebPagePreview|درخواست پیش‌نمایش پیوندهای موجود در متن.
+messages.exportChatInvite|ساخت پیوند دعوت با محدودیت زمان، تعداد یا نیاز به تأیید.
+messages.checkChatInvite|بررسی اطلاعات پیوند دعوت بدون عضویت خودکار.
+messages.importChatInvite|پذیرش پیوند دعوت و درخواست عضویت.
+messages.getStickerSet|دریافت اطلاعات یک مجموعهٔ استیکر.
+messages.installStickerSet|نصب مجموعهٔ استیکر روی حساب.
+messages.uninstallStickerSet|برداشتن مجموعهٔ استیکر نصب‌شده.
+messages.startBot|شروع گفتگو با ربات و پارامتر آغاز.
+messages.getMessagesViews|خواندن بازدید پیام‌ها و در صورت درخواست افزایش شمارنده.
+messages.migrateChat|تبدیل گروه معمولی به ساختار گروه بزرگ در صورت پشتیبانی.
+messages.searchGlobal|جست‌وجوی عمومی پیام‌های قابل دسترس حساب با صفحه‌بندی.
+messages.getDocumentByHash|یافتن سند بر اساس SHA-256، اندازه و نوع MIME.
+messages.getSavedGifs|خواندن GIFهای ذخیره‌شدهٔ حساب.
+messages.saveGif|ذخیره یا حذف یک GIF از فهرست ذخیره‌شده.
+messages.getInlineBotResults|دریافت نتایج inline ربات برای query و مقصد.
+messages.sendInlineBotResult|ارسال نتیجهٔ انتخاب‌شدهٔ inline به گفتگو.
+messages.editMessage|ویرایش متن، رسانه یا markup یک پیام مجاز.
+messages.getBotCallbackAnswer|ارسال callback دکمهٔ ربات و دریافت پاسخ آن.
+messages.getPeerDialogs|دریافت وضعیت گفتگوهای مشخص.
+messages.saveDraft|ذخیرهٔ پیش‌نویس متن و ریپلای در یک گفتگو.
+messages.getFeaturedStickers|خواندن مجموعه‌های استیکر معرفی‌شده.
+messages.readFeaturedStickers|اعلام دیده‌شدن مجموعه‌های معرفی‌شده.
+messages.getRecentStickers|خواندن استیکرهای اخیراً استفاده‌شده.
+messages.saveRecentSticker|ثبت یا برداشتن استیکر از فهرست اخیر.
+messages.clearRecentStickers|پاک‌کردن فهرست استیکرهای اخیر.
+messages.getArchivedStickers|خواندن مجموعه‌های استیکر بایگانی‌شده.
+messages.getCommonChats|خواندن گروه‌های مشترک با یک کاربر.
+messages.getWebPage|خواندن اطلاعات صفحهٔ وب با URL و hash کش.
+messages.toggleDialogPin|سنجاق یا آزادکردن یک گفتگو در فهرست.
+messages.getPinnedDialogs|خواندن گفتگوهای سنجاق‌شدهٔ یک پوشه.
+messages.uploadMedia|تبدیل فایل آپلودشده به رسانهٔ ذخیره‌شده؛ به‌تنهایی پیام منتشر نمی‌کند.
+messages.getFavedStickers|خواندن استیکرهای مورد علاقه.
+messages.faveSticker|افزودن یا حذف یک استیکر از علاقه‌مندی‌ها.
+messages.getUnreadMentions|خواندن پیام‌های دارای اشارهٔ خوانده‌نشده در گفتگو.
+messages.readMentions|علامت‌زدن اشاره‌های گفتگو به‌عنوان خوانده‌شده.
+messages.sendMultiMedia|ارسال چند InputSingleMedia به‌صورت آلبوم؛ برای فایل محلی send_album ساده‌تر است.
+messages.searchStickerSets|جست‌وجوی مجموعه‌های استیکر با عبارت.
+messages.markDialogUnread|علامت‌زدن گفتگو به‌عنوان خوانده‌نشده یا برداشتن آن.
+messages.updatePinnedMessage|تغییر پیام سنجاق‌شدهٔ گفتگو.
+messages.sendVote|ارسال رأی یا تغییر گزینه‌های رأی نظرسنجی.
+messages.getPollResults|خواندن نتیجهٔ نظرسنجیِ پیام مشخص.
+messages.getOnlines|خواندن شمار کاربران آنلاین یک گفتگو.
+messages.editChatAbout|ویرایش توضیح گروه یا peer مجاز.
+messages.editChatDefaultBannedRights|تغییر محدودیت‌های پیش‌فرض اعضای گفتگو.
+messages.getEmojiKeywordsDifference|خواندن تغییرات واژه‌های جست‌وجوی ایموجی برای زبان.
+messages.requestUrlAuth|درخواست اطلاعات احراز هویت یک پیوند یا دکمهٔ وب.
+messages.acceptUrlAuth|پذیرش احراز هویت پیوند با پرچم دسترسی نوشتن.
+messages.hidePeerSettingsBar|پنهان‌کردن نوار تنظیمات/گزارش peer.
+messages.getScheduledHistory|خواندن پیام‌های زمان‌بندی‌شدهٔ گفتگو.
+messages.sendScheduledMessages|ارسال پیام‌های زمان‌بندی‌شدهٔ مشخص در زمان فعلی.
+messages.deleteScheduledMessages|حذف پیام‌های مشخص از صف زمان‌بندی سرور.
+messages.getPollVotes|خواندن صفحه‌ای از رأی‌دهندگان نظرسنجی در صورت مجازبودن.
+messages.getDialogFilters|خواندن فیلترها و پوشه‌های گفتگو.
+messages.getSuggestedDialogFilters|دریافت پیشنهاد پوشه/فیلتر گفتگو از سرور.
+messages.updateDialogFilter|ثبت، ویرایش یا حذف فیلتر گفتگو با شناسه.
+messages.updateDialogFiltersOrder|تغییر ترتیب فیلترهای گفتگو.
+messages.getReplies|دریافت پاسخ‌ها و رشتهٔ گفتگو برای یک پیام.
+messages.getDiscussionMessage|یافتن پیام متناظر در گروه بحث یک پست.
+messages.readDiscussion|علامت‌زدن پاسخ‌های رشته به‌عنوان خوانده‌شده.
+messages.unpinAllMessages|آزادکردن همهٔ پیام‌های سنجاق‌شده در محدودهٔ مشخص.
+messages.deleteChat|حذف گروه معمولی با دسترسی لازم.
+messages.getExportedChatInvites|خواندن پیوندهای دعوت صادرشده با فیلتر مدیر و وضعیت.
+messages.editExportedChatInvite|ویرایش محدودیت‌ها، عنوان یا لغو یک پیوند دعوت.
+messages.deleteRevokedExportedChatInvites|حذف پیوندهای دعوت لغوشدهٔ یک مدیر.
+messages.deleteExportedChatInvite|حذف یک پیوند دعوت صادرشده.
+messages.getChatInviteImporters|خواندن کاربران استفاده‌کننده یا درخواست‌دهندهٔ پیوند دعوت.
+messages.getMessageReadParticipants|خواندن شناسهٔ کسانی که پیام را خوانده‌اند در محدودهٔ مجاز.
+messages.hideChatJoinRequest|پذیرش یا رد درخواست عضویت یک کاربر.
+messages.hideAllChatJoinRequests|رسیدگی گروهی به درخواست‌های عضویت، با فیلتر پیوند.
+messages.toggleNoForwards|تغییر محدودیت فوروارد محتوا در گفتگو.
+messages.saveDefaultSendAs|ثبت هویت پیش‌فرض ارسال در یک گفتگو.
+messages.sendReaction|ارسال یا برداشتن واکنش روی پیام.
+messages.getMessagesReactions|خواندن واکنش‌های پیام‌های مشخص.
+messages.getMessageReactionsList|خواندن فهرست کاربران و واکنش‌های یک پیام.
+messages.setChatAvailableReactions|تنظیم واکنش‌های مجاز گفتگو.
+messages.getAvailableReactions|خواندن واکنش‌های موجود در سرور با hash کش.
+messages.setDefaultReaction|تغییر واکنش پیش‌فرض حساب.
+messages.translateText|درخواست ترجمهٔ متن یا پیام‌ها به زبان مقصد، در صورت پشتیبانی.
+messages.getUnreadReactions|خواندن پیام‌های دارای واکنش خوانده‌نشده.
+messages.readReactions|علامت‌زدن واکنش‌های گفتگو به‌عنوان خوانده‌شده.
+messages.getAttachMenuBots|خواندن ربات‌های فهرست پیوست.
+messages.getAttachMenuBot|خواندن اطلاعات یک ربات در فهرست پیوست.
+messages.toggleBotInAttachMenu|افزودن یا حذف ربات از فهرست پیوست و تعیین اجازهٔ نوشتن.
+messages.requestWebView|درخواست URL و مجوز وب‌ویوی ربات برای مقصد.
+messages.prolongWebView|تمدید وضعیت وب‌ویوی باز ربات.
+messages.requestSimpleWebView|درخواست وب‌ویوی سادهٔ ربات با اطلاعات رابط.
+messages.sendWebViewResultMessage|ارسال نتیجهٔ وب‌ویو به‌صورت پیام.
+messages.sendWebViewData|ارسال دادهٔ فرم وب‌ویو به ربات.
+messages.transcribeAudio|درخواست تبدیل صوت پیام به متن در صورت پشتیبانی سرور.
+messages.getCustomEmojiDocuments|خواندن اسناد ایموجی سفارشی با شناسه.
+messages.getEmojiStickers|خواندن مجموعه‌های استیکر ایموجی حساب.
+messages.getFeaturedEmojiStickers|خواندن مجموعه‌های ایموجی معرفی‌شده.
+messages.getTopReactions|خواندن واکنش‌های برتر با صفحه‌بندی/کش.
+messages.getRecentReactions|خواندن واکنش‌های اخیر حساب.
+messages.clearRecentReactions|پاک‌کردن فهرست واکنش‌های اخیر حساب.
+messages.getExtendedMedia|درخواست اطلاعات تکمیلی رسانهٔ پیام‌ها.
+messages.togglePeerTranslations|فعال یا غیرفعال‌کردن ترجمه برای گفتگو.
+messages.getBotApp|خواندن اطلاعات برنامهٔ یک ربات.
+messages.requestAppWebView|درخواست وب‌ویوی برنامهٔ ربات با مقصد و پارامتر آغاز.
+messages.toggleDialogFilterTags|تغییر نمایش برچسب‌های فیلتر گفتگو.
+updates.getState|خواندن cursorهای فعلی دریافت مانند pts، qts و seq.
+updates.getDifference|بازیابی تغییرات پس از cursor دریافت ذخیره‌شده.
+updates.getChannelDifference|بازیابی فاصلهٔ تغییرات یک کانال با pts و فیلتر.
+photos.updateProfilePhoto|انتخاب عکس پروفایل از رسانهٔ موجود.
+photos.uploadProfilePhoto|ثبت عکس یا ویدئوی تازهٔ پروفایل از فایل آپلودشده.
+photos.deletePhotos|حذف عکس‌های مشخص پروفایل.
+photos.getUserPhotos|خواندن صفحه‌ای از عکس‌های پروفایل کاربر.
+photos.uploadContactProfilePhoto|ثبت عکس پیشنهادی/شخصی برای پروفایل مخاطب.
+upload.saveFilePart|آپلود یک قطعهٔ فایل کوچک؛ موتور آن را به اتصال فایل هدایت می‌کند.
+upload.getFile|دریافت یک قطعه از فایل با location، offset و limit.
+upload.saveBigFilePart|آپلود یک قطعهٔ فایل بزرگ همراه شمار کل قطعات.
+upload.getWebFile|دریافت قطعه‌ای از فایل وب با InputWebFileLocation.
+help.getConfig|خواندن تنظیمات اتصال و پیکربندی سرور.
+help.getNearestDc|خواندن مرکز دادهٔ نزدیک طبق پاسخ سرور.
+help.getSupport|دریافت اطلاعات پشتیبانی ارائه‌شده توسط سرور.
+help.acceptTermsOfService|ثبت پذیرش شرایط سرویس با شناسهٔ مشخص؛ پیش از اجرا متن شرایط را بررسی کنید.
+help.getAppConfig|خواندن پیکربندی برنامه با hash کش.
+help.getCountriesList|خواندن کشورها و اطلاعات شماره‌گیری برای زبان.
+help.getPremiumPromo|خواندن اطلاعات معرفی سرویس پریمیوم، در صورت پشتیبانی.
+help.getPeerColors|خواندن رنگ‌های مجاز نام/peer.
+help.getPeerProfileColors|خواندن رنگ‌های مجاز پروفایل.
+help.getTimezonesList|خواندن فهرست منطقه‌های زمانی.
+channels.readHistory|علامت‌زدن تاریخچهٔ کانال/سوپرگروه به‌عنوان خوانده‌شده.
+channels.deleteMessages|حذف پیام‌های مشخص یک کانال با دسترسی لازم.
+channels.getMessages|دریافت پیام‌های مشخص کانال با InputChannel و InputMessage.
+channels.getParticipants|خواندن اعضای کانال/سوپرگروه با فیلتر و صفحه‌بندی.
+channels.getParticipant|خواندن وضعیت عضویت یک کاربر در کانال.
+channels.getChannels|دریافت اطلاعات پایهٔ کانال‌های مشخص.
+channels.getFullChannel|دریافت اطلاعات کامل کانال یا سوپرگروه.
+channels.createChannel|ساخت کانال یا سوپرگروه با عنوان و توضیح.
+channels.editAdmin|تغییر اختیارات مدیریتی کاربر در کانال.
+channels.editTitle|ویرایش عنوان کانال/سوپرگروه.
+channels.editPhoto|ویرایش عکس کانال/سوپرگروه.
+channels.checkUsername|بررسی امکان استفاده از نام کاربری برای کانال.
+channels.updateUsername|تغییر نام کاربری کانال.
+channels.joinChannel|عضویت حساب در کانال مجاز.
+channels.leaveChannel|خروج حساب از کانال.
+channels.inviteToChannel|دعوت کاربران مشخص به کانال/سوپرگروه.
+channels.deleteChannel|حذف کانال/سوپرگروه با دسترسی مالک لازم.
+channels.toggleSignatures|تغییر نمایش امضای نویسنده زیر پست‌های کانال.
+channels.getAdminedPublicChannels|خواندن کانال‌های عمومی تحت مدیریت حساب.
+channels.editBanned|تغییر محدودیت یا مسدودیت یک عضو کانال.
+channels.readMessageContents|اعلام خوانده‌شدن محتوای پیام‌های کانال.
+channels.togglePreHistoryHidden|تغییر نمایش تاریخچهٔ قبل از عضویت برای اعضای تازه.
+channels.getGroupsForDiscussion|خواندن گروه‌های قابل اتصال به بحث کانال.
+channels.setDiscussionGroup|اتصال کانال به گروه بحث مشخص.
+channels.viewSponsoredMessage|ثبت دیده‌شدن پیام تبلیغاتی با توکن باینری ارائه‌شدهٔ سرور.
+channels.getSponsoredMessages|خواندن پیام‌های تبلیغاتی ارائه‌شده برای کانال.
+channels.getSendAs|خواندن هویت‌های مجاز ارسال در گفتگو.
+channels.toggleJoinToSend|تغییر الزام عضویت برای ارسال پیام.
+channels.toggleJoinRequest|تغییر نیاز به تأیید درخواست عضویت.
+channels.reorderUsernames|تغییر ترتیب نام‌های کاربری کانال.
+channels.toggleUsername|فعال یا غیرفعال‌کردن یک نام کاربری کانال.
+channels.deactivateAllUsernames|غیرفعال‌کردن همهٔ نام‌های کاربری قابل غیرفعال‌سازی کانال.
+channels.toggleForum|تغییر حالت انجمن/موضوع برای سوپرگروه.
+channels.createForumTopic|ساخت موضوع در گروه دارای حالت انجمن.
+channels.getForumTopics|خواندن موضوع‌های انجمن با جست‌وجو و offset.
+channels.getForumTopicsByID|خواندن موضوع‌های مشخص بر اساس شناسه.
+channels.editForumTopic|ویرایش نام، آیکون، بسته‌بودن یا مخفی‌بودن موضوع.
+channels.updatePinnedForumTopic|سنجاق یا آزادکردن یک موضوع انجمن.
+channels.deleteTopicHistory|حذف تاریخچهٔ یک موضوع انجمن.
+channels.toggleParticipantsHidden|تغییر مخفی‌بودن فهرست اعضا.
+channels.clickSponsoredMessage|ثبت کلیک پیام تبلیغاتی با توکن باینری سرور.
+channels.toggleViewForumAsMessages|تغییر حالت نمایش انجمن به فهرست پیام‌ها.
+channels.toggleMembershipMessageVisibility|تغییر نمایش پیام‌های عضویت طبق طرح سروش.
+bots.canSendMessage|بررسی توانایی ربات برای ارسال پیام به کاربر.
+bots.allowSendMessage|اعطای اجازهٔ ارسال پیام به ربات.
+bots.invokeWebViewCustomMethod|فراخوانی متد سفارشی وب‌ویوی ربات با دادهٔ JSON.
+payments.getPaymentForm|خواندن فرم پرداخت یک صورت‌حساب؛ پشتیبانی زنده تأیید نشده است.
+payments.getPaymentReceipt|خواندن رسید پرداخت پیام مشخص.
+payments.validateRequestedInfo|اعتبارسنجی اطلاعات درخواست‌شده در فرم پرداخت.
+payments.sendPaymentForm|ارسال فرم و مجوز پرداخت؛ می‌تواند اثر مالی واقعی داشته باشد.
+payments.getSavedInfo|خواندن اطلاعات پرداخت ذخیره‌شدهٔ مجاز.
+payments.checkGiftCode|بررسی وضعیت کد هدیه.
+payments.applyGiftCode|اعمال کد هدیه روی حساب.
+payments.getGiveawayInfo|خواندن اطلاعات قرعه‌کشی مرتبط با پیام.
+phone.requestCall|شروع سیگنالینگ تماس با کاربر؛ رسانهٔ صوتی/تصویری جداگانه پیاده‌سازی می‌شود.
+phone.acceptCall|پذیرش سیگنالینگ تماس ورودی.
+phone.confirmCall|تأیید کلید و پارامترهای تماس.
+phone.receivedCall|اعلام دریافت درخواست تماس.
+phone.discardCall|پایان یا رد تماس با علت و مدت مشخص.
+phone.setCallRating|ثبت امتیاز و توضیح تماس.
+phone.saveCallDebug|ارسال اطلاعات عیب‌یابی تماس به سرور؛ محتوای debug را بررسی کنید.
+phone.sendSignalingData|ارسال بایت‌های سیگنالینگ تماس.
+phone.createGroupCall|ساخت تماس گروهی با مقصد و زمان‌بندی اختیاری.
+phone.joinGroupCall|عضویت در تماس گروهی با پارامترهای رسانهٔ JSON.
+phone.leaveGroupCall|خروج از تماس گروهی با شناسهٔ منبع رسانه.
+phone.discardGroupCall|پایان‌دادن به تماس گروهی با دسترسی لازم.
+phone.getGroupCall|خواندن وضعیت تماس گروهی و بخشی از شرکت‌کنندگان.
+phone.getGroupParticipants|خواندن شرکت‌کنندگان تماس گروهی با صفحه‌بندی.
+phone.editGroupCallParticipant|تغییر صدا، وضعیت ویدئو یا دست بلندکردن شرکت‌کننده.
+phone.exportGroupCallInvite|ساخت پیوند دعوت تماس گروهی با قابلیت لغو پیوند قبلی.
+phone.toggleGroupCallStartSubscription|تغییر اشتراک اعلان آغاز تماس گروهی.
+phone.joinGroupCallPresentation|شروع ارائه در تماس گروهی با پارامترهای رسانه.
+phone.leaveGroupCallPresentation|پایان ارائه در تماس گروهی.
+langpack.getLangPack|خواندن بستهٔ ترجمهٔ رابط برای زبان مشخص.
+langpack.getStrings|خواندن کلیدهای ترجمهٔ مشخص از بستهٔ زبان.
+langpack.getDifference|خواندن تغییرات بستهٔ زبان از نسخهٔ قبلی.
+langpack.getLanguages|خواندن زبان‌های موجود در بستهٔ ترجمه.
+folders.editPeerFolders|جابه‌جایی peerها بین پوشه‌ها، مانند بایگانی.
+stats.getBroadcastStats|خواندن آمار کانال پخشی با دسترسی لازم.
+stats.loadAsyncGraph|بارگذاری نمودار آمار با توکن دریافتی سرور.
+stats.getMegagroupStats|خواندن آمار سوپرگروه با دسترسی لازم.
+stats.getMessagePublicForwards|خواندن فورواردهای عمومی قابل مشاهدهٔ یک پیام.
+stats.getMessageStats|خواندن آمار یک پیام کانال.
+stats.getStoryStats|خواندن آمار استوری با دسترسی لازم.
+stats.getStoryPublicForwards|خواندن فورواردهای عمومی قابل مشاهدهٔ یک استوری.
+chatlists.exportChatlistInvite|ساخت دعوت‌نامهٔ اشتراک فهرست گفتگوها.
+chatlists.deleteExportedInvite|حذف یک دعوت‌نامهٔ اشتراک فهرست گفتگوها.
+chatlists.editExportedInvite|ویرایش عنوان یا peerهای دعوت‌نامهٔ فهرست گفتگوها.
+chatlists.getExportedInvites|خواندن دعوت‌نامه‌های صادرشدهٔ فهرست گفتگوها.
+chatlists.checkChatlistInvite|بررسی دعوت‌نامهٔ فهرست گفتگوها بدون پیوستن.
+chatlists.joinChatlistInvite|پیوستن به گفتگوهای انتخاب‌شدهٔ دعوت‌نامه.
+chatlists.getLeaveChatlistSuggestions|دریافت پیشنهاد گفتگوهایی که هنگام ترک فهرست می‌توان خارج شد.
+chatlists.leaveChatlist|ترک فهرست گفتگوها و peerهای مشخص.
+stories.editStory|ویرایش رسانه، کپشن، محدوده‌های رسانه یا حریم خصوصی استوری.
+stories.deleteStories|حذف استوری‌های مشخص یک peer.
+stories.togglePinned|تغییر سنجاق‌بودن استوری‌ها در پروفایل.
+stories.getAllStories|خواندن جریان استوری‌ها با state صفحه‌بندی سرور.
+stories.getPinnedStories|خواندن استوری‌های سنجاق‌شدهٔ peer.
+stories.getStoriesArchive|خواندن بایگانی استوری‌های قابل دسترس.
+stories.getStoriesByID|خواندن استوری‌های مشخص بر اساس شناسه.
+stories.readStories|اعلام دیده‌شدن استوری‌ها تا شناسهٔ مشخص.
+stories.incrementStoryViews|افزایش شمارندهٔ بازدید استوری‌های مشخص.
+stories.getStoryViewsList|خواندن فهرست بازدیدکنندگان استوری با فیلتر و صفحه‌بندی.
+stories.exportStoryLink|ساخت پیوند دسترسی به استوری.
+stories.report|ارسال گزارش دربارهٔ استوری‌های مشخص.
+stories.activateStealthMode|فعال‌کردن حالت پنهان بازدید استوری در محدودهٔ مجاز سرور.
+stories.sendReaction|ارسال واکنش به استوری.
+stories.getPeerStories|خواندن استوری‌های یک peer.
+stories.getPeerMaxIDs|خواندن آخرین شناسهٔ استوری peerهای مشخص.
+stories.togglePeerStoriesHidden|تغییر مخفی‌بودن استوری‌های یک peer در فهرست.
+premium.getBoostsList|خواندن فهرست تقویت‌های یک peer در صورت پشتیبانی.
+premium.getMyBoosts|خواندن تقویت‌های متعلق به حساب.
+premium.applyBoost|اعمال تقویت‌های انتخاب‌شده روی یک peer.
+premium.getBoostsStatus|خواندن وضعیت تقویت‌های یک peer.
+thirdParty.request|درخواست به لایهٔ thirdParty با دادهٔ طرح رسمی؛ معنای سرویس و مجوز آن را مستقل بررسی کنید.
+thirdParty.tell|ارسال داده به لایهٔ thirdParty طبق طرح رسمی؛ پشتیبانی زنده تأیید نشده است.
