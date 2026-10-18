@@ -65,6 +65,26 @@ class FakeEngine:
                 raise errors.AuthKeyUnregisteredError(request=request)
             return types.updates.State(0, 0, datetime.now(timezone.utc), 0, 0)
         self.calls.append(request)
+        if isinstance(request, functions.messages.UploadMediaRequest):
+            media_id = len(self.calls)
+            if isinstance(request.media, types.InputMediaUploadedPhoto):
+                return types.MessageMediaPhoto(photo=types.Photo(
+                    media_id, 99, b'reference', datetime.now(timezone.utc), [], dc_id=3))
+            return types.MessageMediaDocument(document=types.Document(
+                media_id, 99, b'reference', datetime.now(timezone.utc),
+                request.media.mime_type, size=20, dc_id=3, attributes=request.media.attributes))
+        if isinstance(request, functions.messages.SendMultiMediaRequest):
+            updates = []
+            for index, item in enumerate(request.multi_media):
+                message_id = 100 + index
+                message = types.Message(message_id, types.PeerUser(7),
+                    date=datetime.now(timezone.utc), message=item.message, out=True, grouped_id=987,
+                    reply_to=types.MessageReplyHeader(reply_to_msg_id=request.reply_to.reply_to_msg_id)
+                    if request.reply_to else None)
+                updates.extend([types.UpdateMessageID(id=message_id, random_id=item.random_id),
+                                types.UpdateNewMessage(message, pts=message_id, pts_count=1)])
+            return types.Updates(list(reversed(updates)), users=[], chats=[],
+                                 date=datetime.now(timezone.utc), seq=1)
         if isinstance(request, (functions.messages.SendMessageRequest,
                                 functions.messages.SendMediaRequest,
                                 functions.messages.ForwardMessagesRequest)):

@@ -1170,6 +1170,9 @@ class SyncMethods:
     def send_poll(self, chat_id: Any, question: Any, options: Any, *, anonymous: Any=True, multiple: Any=False, correct_option: Any=None, reply_to_message_id: Any=None, wait: Any=True, timeout: Any=30):
         return self._run(self._client.send_poll(chat_id=chat_id, question=question, options=options, anonymous=anonymous, multiple=multiple, correct_option=correct_option, reply_to_message_id=reply_to_message_id, wait=wait, timeout=timeout))
 
+    def send_album(self, chat_id: Any, files: Any, *, caption: Any=None, captions: Any=None, reply_to_message_id: Any=None, wait: Any=True, timeout: Any=300):
+        return self._run(self._client.send_album(chat_id=chat_id, files=files, caption=caption, captions=captions, reply_to_message_id=reply_to_message_id, wait=wait, timeout=timeout))
+
     def get_operation(self, operation_id: Any):
         return self._run(self._client.get_operation(operation_id=operation_id))
 

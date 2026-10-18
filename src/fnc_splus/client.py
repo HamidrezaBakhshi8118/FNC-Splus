@@ -221,7 +221,9 @@ class Client(NativeMethods):
                 reply_to=types.MessageReplyHeader(reply_to_msg_id=request.reply_to.reply_to_msg_id)
                 if getattr(request, 'reply_to', None) else None,
             ))
-        response = self._engine._get_response_message(request, result, request.peer
+        mapping = [item.random_id for item in request.multi_media] \
+            if isinstance(request, functions.messages.SendMultiMediaRequest) else request
+        response = self._engine._get_response_message(mapping, result, request.peer
                                                      if hasattr(request, 'peer') else request.to_peer)
         if response is None:
             raise OperationUnknownError(f"Operation {row['id']} confirmed without a resolvable message")
@@ -339,8 +341,7 @@ class Client(NativeMethods):
         )
         return await self._enqueue(request, 'messages.sendMedia', 'message', wait=wait, timeout=timeout)
 
-    async def send_photo(self, chat_id, photo, *, caption=None, reply_to_message_id=None,
-                         wait=True, timeout=300):
+    async def _upload_photo(self, photo):
         from PIL import Image, ImageOps
         with Image.open(photo) as source:
             image = ImageOps.exif_transpose(source).convert('RGB')
@@ -352,11 +353,15 @@ class Client(NativeMethods):
         await self.start()
         uploaded = await self._engine.upload_file(prepared)
         # Soroush's uploaded-photo TL type has no thumbnail field; its server creates previews.
-        media = types.InputMediaUploadedPhoto(file=uploaded)
+        return types.InputMediaUploadedPhoto(file=uploaded)
+
+    async def send_photo(self, chat_id, photo, *, caption=None, reply_to_message_id=None,
+                         wait=True, timeout=300):
+        media = await self._upload_photo(photo)
         return await self._send_media(chat_id, media, caption, reply_to_message_id, wait, timeout)
 
-    async def send_video(self, chat_id, video, *, caption=None, reply_to_message_id=None,
-                         wait=True, timeout=300):
+    @staticmethod
+    def _prepare_video(video):
         try:
             import av
         except ImportError:
@@ -381,9 +386,72 @@ class Client(NativeMethods):
             image.convert('RGB').save(thumb, 'JPEG', quality=80)
             thumb.seek(0)
             thumb.name = 'thumbnail.jpg'
+        return attrs, thumb
+
+    async def send_video(self, chat_id, video, *, caption=None, reply_to_message_id=None,
+                         wait=True, timeout=300):
+        attrs, thumb = self._prepare_video(video)
         return await self.send_file(chat_id, video, caption=caption,
             reply_to_message_id=reply_to_message_id, attributes=attrs, thumbnail=thumb,
             mime_type=mimetypes.guess_type(str(video))[0] or 'video/mp4', wait=wait, timeout=timeout)
+
+    async def send_album(self, chat_id, files, *, caption=None, captions=None,
+                         reply_to_message_id=None, wait=True, timeout=300):
+        """Send 2–10 photos/videos as one album, preserving input order.
+
+        ``caption`` belongs to the first item. Alternatively, ``captions`` must
+        contain exactly one string per item. Preparation uploads do not post
+        messages; the final sendMultiMedia request is persisted in the outbox.
+        """
+        if not isinstance(files, (list, tuple)) or not 2 <= len(files) <= 10:
+            raise ValueError('An album requires a list of 2 to 10 photos/videos')
+        if caption is not None and not isinstance(caption, str):
+            raise ValueError('Album caption must be a string')
+        if captions is not None:
+            if caption is not None:
+                raise ValueError('Use caption or captions, not both')
+            if (not isinstance(captions, (list, tuple)) or len(captions) != len(files)
+                    or any(not isinstance(text, str) for text in captions)):
+                raise ValueError('captions must contain one string per album item')
+        else:
+            captions = [caption or '', *[''] * (len(files) - 1)]
+        paths = [Path(file) for file in files]
+        kinds = []
+        for path in paths:
+            if not path.is_file():
+                raise FileNotFoundError(path)
+            mime = mimetypes.guess_type(path.name)[0] or ''
+            if not mime.startswith(('image/', 'video/')):
+                raise ValueError('Albums support photos and videos only')
+            kinds.append(mime)
+        await self.start()
+        peer = await self._engine.get_input_entity(chat_id)
+        items = []
+        for path, mime, text in zip(paths, kinds, captions):
+            if mime.startswith('image/'):
+                uploaded = await self._upload_photo(path)
+            else:
+                attrs, thumb = self._prepare_video(path)
+                uploaded = types.InputMediaUploadedDocument(
+                    file=await self._engine.upload_file(str(path)),
+                    thumb=await self._engine.upload_file(thumb),
+                    mime_type=mime, attributes=attrs,
+                )
+            # Albums require stored media references, not temporary upload handles.
+            stored = await self._engine(functions.messages.UploadMediaRequest(peer, media=uploaded))
+            if (mime.startswith('image/') and not isinstance(stored, types.MessageMediaPhoto)) or \
+                    (mime.startswith('video/') and not isinstance(stored, types.MessageMediaDocument)):
+                raise UnsupportedMediaError('Server did not return usable album media; no album was sent')
+            media = utils.get_input_media(stored)
+            items.append(types.InputSingleMedia(media=media, random_id=secrets.randbits(63),
+                                                message=text))
+        request = functions.messages.SendMultiMediaRequest(
+            peer=peer, multi_media=items,
+            reply_to=types.InputReplyToMessage(int(reply_to_message_id))
+            if reply_to_message_id is not None else None,
+        )
+        return await self._enqueue(request, 'messages.sendMultiMedia', 'message',
+                                   wait=wait, timeout=timeout)
 
     async def send_voice(self, chat_id, voice, *, duration, caption=None,
                          reply_to_message_id=None, wait=True, timeout=300):

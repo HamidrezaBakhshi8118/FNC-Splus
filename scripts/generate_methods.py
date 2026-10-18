@@ -49,7 +49,7 @@ def main():
     names = [method_name(item['name']) for item in catalog['methods'] if item['engine_supported']]
     names += ['invoke', 'send', 'send_message', 'get_me', 'get_messages', 'get_message', 'get_chats',
               'download', 'download_media', 'forward_message', 'send_file', 'send_photo', 'send_video',
-              'send_voice', 'send_poll', 'get_operation', 'wait_operation', 'run', 'export_session']
+              'send_voice', 'send_poll', 'send_album', 'get_operation', 'wait_operation', 'run', 'export_session']
     for name in names:
         function = getattr(Client, name)
         params = list(inspect.signature(function).parameters.values())[1:]

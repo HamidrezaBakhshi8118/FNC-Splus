@@ -91,6 +91,9 @@ await client.send(chat_id, "متن")
 await client.send_message(chat_id, "ریپلای", reply_to_message_id=123)
 await client.send_photo(chat_id, "photo.jpg", caption="کپشن عکس")
 await client.send_video(chat_id, "video.mp4", caption="کپشن فیلم")
+await client.send_album(chat_id, ["photo1.jpg", "photo2.jpg"], caption="آلبوم عکس")
+await client.send_album(chat_id, ["video1.mp4", "video2.mp4"], caption="آلبوم ویدئو")
+await client.send_album(chat_id, ["photo.jpg", "video.mp4"], caption="آلبوم ترکیبی")
 await client.send_file(chat_id, "document.pdf", caption="فایل")
 await client.send_voice(chat_id, "voice.ogg", duration=4)
 await client.forward_message(source_chat_id, message_id, destination_chat_id)
@@ -102,6 +105,10 @@ if message.media:
 else:
     print(message.message or "")
 ```
+
+متد `send_album` بین ۲ تا ۱۰ عکس و ویدئو می‌گیرد و فهرست پیام‌های ارسال‌شده را به همان ترتیب برمی‌گرداند. `caption` روی عضو اول آلبوم قرار می‌گیرد. برای کپشن جداگانهٔ هر عضو، به‌جای آن `captions=["کپشن عکس", "کپشن ویدئو"]` بدهید؛ تعداد کپشن‌ها باید برابر تعداد فایل‌ها باشد. ریپلای با `reply_to_message_id` و صف پایدار با `wait=False` نیز پشتیبانی می‌شود. برای آلبوم‌های دارای ویدئو، افزونهٔ `[video]` لازم است. کپشن به‌صورت متن ساده ارسال می‌شود.
+
+در تست واقعی ۱۸ اکتبر ۲۰۲۶، سه آلبوم دو عضوی عکس، ویدئو و ترکیبی، فقط در پیام‌های ذخیره‌شده ارسال شدند. بازخوانی از سرور، شناسهٔ گروه مشترک، ترتیب، کپشن، وجود اندازه‌های پیش‌نمایش ویدئو/عکس و دانلود و بازشدن هر شش فایل را تأیید کرد. ویدئوهای آزمایشی H.264 در MP4 بودند. وب‌کلاینت رسمی نیز هر سه گروه را به‌صورت آلبوم نشان داد. کپشن‌های جداگانه روی سرور حفظ شدند؛ نسخهٔ وب در آلبوم ترکیبی فقط کپشن عضو آخر را زیر مجموعه نشان داد. برای کپشن مشترک آلبوم از `caption` استفاده کنید. اسکریپت `scripts/live_albums.py` برای تکرار آگاهانهٔ این تست است؛ ژورنال خصوصی آن در `test-results/live-albums.json` از ارسال کورکورانه پس از وقفه جلوگیری می‌کند.
 
 شناسهٔ چت می‌تواند username، شیء `InputPeer` یا شناسهٔ عددی قابل حل در کش باشد. برای شناسهٔ عددی ناشناخته، دریافت entity و access hash از سرور لازم است؛ صرف دانستن یک عدد همیشه کافی نیست. `"me"` فقط پیام‌های ذخیره‌شدهٔ همان حساب است. شناسهٔ کانال/گروه با قرارداد SPlusthon/Telethon است و GUID روبیکا نیست.
 
