@@ -4,7 +4,7 @@ from types import SimpleNamespace
 
 import pytest
 from PIL import Image
-from splusthon import errors, types
+from fnc_splus._mtproto import errors, types
 
 from fnc_splus import OperationFailedError, OperationUnknownError, SyncClient, UnsupportedMediaError
 from fnc_splus.client import decode_value, encode_value

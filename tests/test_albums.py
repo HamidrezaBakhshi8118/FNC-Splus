@@ -3,7 +3,7 @@ from io import BytesIO
 
 from PIL import Image
 import pytest
-from splusthon import functions, types
+from fnc_splus._mtproto import functions, types
 
 from fnc_splus import UnsupportedMediaError
 

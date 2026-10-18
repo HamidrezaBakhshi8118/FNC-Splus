@@ -5,9 +5,9 @@ from types import SimpleNamespace
 
 import aiohttp
 import pytest
-from splusthon import SoroushClient, functions
-from splusthon.crypto import AuthKey
-from splusthon.sessions import MemorySession
+from fnc_splus._mtproto import TelegramClient, functions
+from fnc_splus._mtproto.crypto import AuthKey
+from fnc_splus._mtproto.sessions import MemorySession
 
 from fnc_splus.engine import Engine, file_host
 from fnc_splus.transport import MAX_FRAME, ORIGIN, SplusWebSocket, WebSocketReader
@@ -92,7 +92,7 @@ def test_file_rpc_is_routed_off_the_message_connection(monkeypatch):
     async def base_call(self, sender, request, **kwargs):
         calls.append(sender)
         return True
-    monkeypatch.setattr(SoroushClient, '_call', base_call)
+    monkeypatch.setattr(TelegramClient, '_call', base_call)
     async def scenario():
         session = MemorySession()
         session.set_dc(3, 'im-server.splus.ir', 443)

@@ -6,15 +6,15 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
-from splusthon import SoroushClient, errors, functions, types
-from splusthon._updates import EntityCache
-from splusthon.crypto import AuthKey
+from fnc_splus._mtproto import TelegramClient, errors, functions, types
+from fnc_splus._mtproto._updates import EntityCache
+from fnc_splus._mtproto.crypto import AuthKey
 
 from fnc_splus import Client
 
 
 class FakeEngine:
-    _get_response_message = SoroushClient._get_response_message
+    _get_response_message = TelegramClient._get_response_message
 
     def __init__(self, session, **settings):
         self.session, self.settings = session, settings

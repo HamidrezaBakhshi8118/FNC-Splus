@@ -3,9 +3,9 @@ import re
 import struct
 
 import pytest
-from splusthon import functions
-from splusthon.tl.alltlobjects import tlobjects
-from splusthon.tl.tlobject import TLObject
+from fnc_splus._mtproto import functions
+from fnc_splus._mtproto.tl.alltlobjects import tlobjects
+from fnc_splus._mtproto.tl.tlobject import TLObject
 
 from fnc_splus.catalog import Catalog
 from fnc_splus.sessions import decode_tl

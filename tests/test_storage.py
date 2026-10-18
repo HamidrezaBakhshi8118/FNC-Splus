@@ -1,8 +1,8 @@
 from datetime import datetime, timezone
 
 import pytest
-from splusthon import types
-from splusthon.crypto import AuthKey
+from fnc_splus._mtproto import types
+from fnc_splus._mtproto.crypto import AuthKey
 
 from fnc_splus import SessionError, SessionInUseError
 from fnc_splus.sessions import EncryptedSession

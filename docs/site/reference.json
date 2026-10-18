@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.2.0",
   "source": {
     "layer": 183,
     "source_url": "https://web.splus.ir/main.6f45955b86113fb74554.js",
@@ -32905,8 +32905,8 @@
       "constructor_id": "90a6ca84",
       "schema": "messageEmpty#90a6ca84 flags:# id:int peer_id:flags.0?Peer = Message;",
       "result_type": "Message",
-      "python_name": "splusthon.tl.patched.MessageEmpty",
-      "signature": "splusthon.tl.patched.MessageEmpty(id, peer_id, date=None, message=None, out=None, mentioned=None, media_unread=None, silent=None, post=None, from_scheduled=None, legacy=None, edit_hide=None, pinned=None, noforwards=None, invert_media=None, offline=None, video_processing_pending=None, paid_suggested_post_stars=None, paid_suggested_post_ton=None, from_id=None, from_boosts_applied=None, saved_peer_id=None, fwd_from=None, via_bot_id=None, via_business_bot_id=None, reply_to=None, media=None, reply_markup=None, entities=None, views=None, forwards=None, replies=None, edit_date=None, post_author=None, grouped_id=None, reactions=None, restriction_reason=None, ttl_period=None, quick_reply_shortcut_id=None, effect=None, factcheck=None, report_delivery_until_date=None, paid_message_stars=None, suggested_post=None, schedule_repeat_period=None, summary_from_language=None, action=None, reactions_are_possible=None)",
+      "python_name": "MessageEmpty",
+      "signature": "MessageEmpty(id, peer_id, date=None, message=None, out=None, mentioned=None, media_unread=None, silent=None, post=None, from_scheduled=None, legacy=None, edit_hide=None, pinned=None, noforwards=None, invert_media=None, offline=None, from_id=None, from_boosts_applied=None, saved_peer_id=None, fwd_from=None, via_bot_id=None, via_business_bot_id=None, reply_to=None, media=None, reply_markup=None, entities=None, views=None, forwards=None, replies=None, edit_date=None, post_author=None, grouped_id=None, reactions=None, restriction_reason=None, ttl_period=None, quick_reply_shortcut_id=None, effect=None, factcheck=None, action=None)",
       "parameters": [
         {
           "name": "id",
@@ -33019,27 +33019,6 @@
           "required": false,
           "default": "None",
           "description": "True برای اعلام وضعیت آفلاین حساب."
-        },
-        {
-          "name": "video_processing_pending",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_suggested_post_stars",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_suggested_post_ton",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         },
         {
           "name": "from_id",
@@ -33196,53 +33175,11 @@
           "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         },
         {
-          "name": "report_delivery_until_date",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_message_stars",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "suggested_post",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "schedule_repeat_period",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "summary_from_language",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
           "name": "action",
           "type": "Python",
           "required": false,
           "default": "None",
           "description": "شیء SendMessageAction برای وضعیت تایپ، ضبط یا آپلود."
-        },
-        {
-          "name": "reactions_are_possible",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         }
       ]
     },
@@ -33251,8 +33188,8 @@
       "constructor_id": "38116ee0",
       "schema": "message#38116ee0 flags:# out:flags.1?true mentioned:flags.4?true media_unread:flags.5?true silent:flags.13?true post:flags.14?true from_scheduled:flags.18?true legacy:flags.19?true edit_hide:flags.21?true pinned:flags.24?true noforwards:flags.26?true invert_media:flags.27?true id:int from_id:flags.8?Peer peer_id:Peer fwd_from:flags.2?MessageFwdHeader via_bot_id:flags.11?long reply_to:flags.3?MessageReplyHeader date:int message:string media:flags.9?MessageMedia reply_markup:flags.6?ReplyMarkup entities:flags.7?Vector<MessageEntity> views:flags.10?int forwards:flags.10?int replies:flags.23?MessageReplies edit_date:flags.15?int post_author:flags.16?string grouped_id:flags.17?long reactions:flags.20?MessageReactions restriction_reason:flags.22?Vector<RestrictionReason> ttl_period:flags.25?int = Message;",
       "result_type": "Message",
-      "python_name": "splusthon.tl.patched.Message",
-      "signature": "splusthon.tl.patched.Message(id, peer_id, date=None, message=None, out=None, mentioned=None, media_unread=None, silent=None, post=None, from_scheduled=None, legacy=None, edit_hide=None, pinned=None, noforwards=None, invert_media=None, offline=None, video_processing_pending=None, paid_suggested_post_stars=None, paid_suggested_post_ton=None, from_id=None, from_boosts_applied=None, saved_peer_id=None, fwd_from=None, via_bot_id=None, via_business_bot_id=None, reply_to=None, media=None, reply_markup=None, entities=None, views=None, forwards=None, replies=None, edit_date=None, post_author=None, grouped_id=None, reactions=None, restriction_reason=None, ttl_period=None, quick_reply_shortcut_id=None, effect=None, factcheck=None, report_delivery_until_date=None, paid_message_stars=None, suggested_post=None, schedule_repeat_period=None, summary_from_language=None, action=None, reactions_are_possible=None)",
+      "python_name": "Message",
+      "signature": "Message(id, peer_id, date=None, message=None, out=None, mentioned=None, media_unread=None, silent=None, post=None, from_scheduled=None, legacy=None, edit_hide=None, pinned=None, noforwards=None, invert_media=None, offline=None, from_id=None, from_boosts_applied=None, saved_peer_id=None, fwd_from=None, via_bot_id=None, via_business_bot_id=None, reply_to=None, media=None, reply_markup=None, entities=None, views=None, forwards=None, replies=None, edit_date=None, post_author=None, grouped_id=None, reactions=None, restriction_reason=None, ttl_period=None, quick_reply_shortcut_id=None, effect=None, factcheck=None, action=None)",
       "parameters": [
         {
           "name": "id",
@@ -33365,27 +33302,6 @@
           "required": false,
           "default": "None",
           "description": "True برای اعلام وضعیت آفلاین حساب."
-        },
-        {
-          "name": "video_processing_pending",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_suggested_post_stars",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_suggested_post_ton",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         },
         {
           "name": "from_id",
@@ -33542,53 +33458,11 @@
           "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         },
         {
-          "name": "report_delivery_until_date",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_message_stars",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "suggested_post",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "schedule_repeat_period",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "summary_from_language",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
           "name": "action",
           "type": "Python",
           "required": false,
           "default": "None",
           "description": "شیء SendMessageAction برای وضعیت تایپ، ضبط یا آپلود."
-        },
-        {
-          "name": "reactions_are_possible",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         }
       ]
     },
@@ -33597,8 +33471,8 @@
       "constructor_id": "2b085862",
       "schema": "messageService#2b085862 flags:# out:flags.1?true mentioned:flags.4?true media_unread:flags.5?true silent:flags.13?true post:flags.14?true legacy:flags.19?true id:int from_id:flags.8?Peer peer_id:Peer reply_to:flags.3?MessageReplyHeader date:int action:MessageAction ttl_period:flags.25?int = Message;",
       "result_type": "Message",
-      "python_name": "splusthon.tl.patched.MessageService",
-      "signature": "splusthon.tl.patched.MessageService(id, peer_id, date=None, message=None, out=None, mentioned=None, media_unread=None, silent=None, post=None, from_scheduled=None, legacy=None, edit_hide=None, pinned=None, noforwards=None, invert_media=None, offline=None, video_processing_pending=None, paid_suggested_post_stars=None, paid_suggested_post_ton=None, from_id=None, from_boosts_applied=None, saved_peer_id=None, fwd_from=None, via_bot_id=None, via_business_bot_id=None, reply_to=None, media=None, reply_markup=None, entities=None, views=None, forwards=None, replies=None, edit_date=None, post_author=None, grouped_id=None, reactions=None, restriction_reason=None, ttl_period=None, quick_reply_shortcut_id=None, effect=None, factcheck=None, report_delivery_until_date=None, paid_message_stars=None, suggested_post=None, schedule_repeat_period=None, summary_from_language=None, action=None, reactions_are_possible=None)",
+      "python_name": "MessageService",
+      "signature": "MessageService(id, peer_id, date=None, message=None, out=None, mentioned=None, media_unread=None, silent=None, post=None, from_scheduled=None, legacy=None, edit_hide=None, pinned=None, noforwards=None, invert_media=None, offline=None, from_id=None, from_boosts_applied=None, saved_peer_id=None, fwd_from=None, via_bot_id=None, via_business_bot_id=None, reply_to=None, media=None, reply_markup=None, entities=None, views=None, forwards=None, replies=None, edit_date=None, post_author=None, grouped_id=None, reactions=None, restriction_reason=None, ttl_period=None, quick_reply_shortcut_id=None, effect=None, factcheck=None, action=None)",
       "parameters": [
         {
           "name": "id",
@@ -33711,27 +33585,6 @@
           "required": false,
           "default": "None",
           "description": "True برای اعلام وضعیت آفلاین حساب."
-        },
-        {
-          "name": "video_processing_pending",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_suggested_post_stars",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_suggested_post_ton",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         },
         {
           "name": "from_id",
@@ -33888,53 +33741,11 @@
           "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         },
         {
-          "name": "report_delivery_until_date",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "paid_message_stars",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "suggested_post",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "schedule_repeat_period",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
-          "name": "summary_from_language",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
-        },
-        {
           "name": "action",
           "type": "MessageAction",
           "required": false,
           "default": "None",
           "description": "شیء SendMessageAction برای وضعیت تایپ، ضبط یا آپلود."
-        },
-        {
-          "name": "reactions_are_possible",
-          "type": "Python",
-          "required": false,
-          "default": "None",
-          "description": "مقدار این فیلد طبق نوع TL اعلام‌شده؛ سازندهٔ نوع و طرح کامل پایین صفحه را ببینید."
         }
       ]
     },

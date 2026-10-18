@@ -1,13 +1,13 @@
 """Binary MTProto over the official Soroush WebSocket endpoint.
 
-SPlusthon owns MTProto framing, RSA/DH and message acknowledgements. This
+The internal engine owns MTProto framing, RSA/DH and acknowledgements. This
 adapter owns exactly one aiohttp session per socket, including failed connects.
 """
 
 import aiohttp
-from splusthon.network.connection.connection import ObfuscatedConnection
-from splusthon.network.connection.tcpabridged import AbridgedPacketCodec
-from splusthon.network.connection.websocket import WebSocketObfuscatedIO
+from fnc_splus._mtproto.network.connection.connection import ObfuscatedConnection
+from fnc_splus._mtproto.network.connection.tcpabridged import AbridgedPacketCodec
+from fnc_splus._mtproto.network.connection.tcpobfuscated import ObfuscatedIO
 
 ORIGIN = "https://web.splus.ir"
 MAX_FRAME = 16 * 1024 * 1024
@@ -57,7 +57,7 @@ class WebSocketWriter:
 
 class SplusWebSocket(ObfuscatedConnection):
     packet_codec = AbridgedPacketCodec
-    obfuscated_io = WebSocketObfuscatedIO
+    obfuscated_io = ObfuscatedIO
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

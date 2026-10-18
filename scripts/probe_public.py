@@ -6,8 +6,8 @@ import logging
 from pathlib import Path
 
 import aiohttp
-from splusthon import functions, types
-from splusthon.network.mtprotoplainsender import MTProtoPlainSender
+from fnc_splus._mtproto import functions, types
+from fnc_splus._mtproto.network.mtprotoplainsender import MTProtoPlainSender
 
 from fnc_splus.transport import SplusWebSocket
 

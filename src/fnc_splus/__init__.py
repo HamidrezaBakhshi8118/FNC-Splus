@@ -1,6 +1,6 @@
 """FNC-Splus: encrypted session client for Soroush Plus."""
-from splusthon import errors, events, functions, types
-from splusthon.sessions import StringSession
+from fnc_splus._mtproto import errors, events, functions, types
+from fnc_splus._mtproto.sessions import StringSession
 
 from .client import Client
 from .exceptions import (
@@ -10,7 +10,7 @@ from .exceptions import (
 from .models import Delivery, Operation, QueuedOperation
 from .sync import SyncClient
 
-__version__ = '0.1.1'
+__version__ = '0.2.0'
 AsyncClient = Client
 
 __all__ = [

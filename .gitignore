@@ -16,6 +16,8 @@ build/
 *.session
 *.session-*
 sessions/
+!src/fnc_splus/_mtproto/sessions/
+!src/fnc_splus/_mtproto/sessions/*.py
 test-results/
 downloads/
 .env

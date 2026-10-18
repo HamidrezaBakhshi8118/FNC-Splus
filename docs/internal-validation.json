@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-18",
+  "engine_source": "Telethon v1.36.0 MIT source, bundled and adapted; no installed client distribution",
+  "external_client_dependency": false,
+  "clean_wheel_install": true,
+  "fresh_real_dh_handshake": true,
+  "existing_session_without_otp": true,
+  "fresh_real_otp_login_retested": false,
+  "self_only_live_checks": {
+    "text_read_back": true,
+    "reply_read_back": true,
+    "photo_read_back": true,
+    "video_read_back": true,
+    "forward_read_back": true,
+    "mixed_album_grouped": true,
+    "websocket_event_received": true
+  },
+  "windows": {
+    "tests": 445,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  },
+  "linux": {
+    "tests": 445,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  }
+}

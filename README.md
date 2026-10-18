@@ -26,9 +26,13 @@ AES-256-GCM with a random sibling `.splus.key`. No OS keyring or encryption
 password is required. Copy both closed files when moving Windows ↔ Linux.
 Never publish sessions, StringSession tokens, keys, inbox or outbox files.
 
-The MTProto/TL engine is the separately installed **SPlusthon 1.1.4** (GPL-3.0),
-not a newly invented authentication protocol. FNC-Splus adds its own transport
-resource ownership, encrypted session adapter, durable queues and readable API.
+Since **0.2.0**, MTProto runs inside FNC-Splus. Neither SPlusthon nor Telethon
+is an installation/runtime dependency. The internal generic engine is adapted
+from the MIT-licensed Telethon 1.36.0 source, with attribution and source hashes
+included. Soroush TL is generated from the recorded official schema, and FNC
+provides service routing, public-key configuration, PyCryptodome crypto adapters,
+portable sessions and durable queues. This is not a claim of a from-scratch or
+clean-room MTProto implementation.
 See [third-party notices](THIRD_PARTY_NOTICES.md), [Persian guide](docs/USAGE.fa.md),
 [protocol evidence](docs/PROTOCOL.fa.md) and [validation](docs/TESTING.fa.md).
 

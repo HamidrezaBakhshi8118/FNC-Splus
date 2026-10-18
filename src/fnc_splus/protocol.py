@@ -1,8 +1,8 @@
-"""The one official handshake constructor absent from SPlusthon 1.1.4."""
+"""Service-specific request validation and legacy handshake compatibility."""
 import struct
 
-from splusthon import functions
-from splusthon.tl.alltlobjects import tlobjects
+from fnc_splus._mtproto import functions
+from fnc_splus._mtproto.tl.alltlobjects import tlobjects
 
 
 class ReqPqMultiNewRequest(functions.ReqPqMultiRequest):

@@ -1,10 +1,10 @@
-"""SPlusthon-compatible session state, encrypted before it reaches disk."""
+"""Portable MTProto session state, encrypted before it reaches disk."""
 import base64
 
-from splusthon.crypto import AuthKey
-from splusthon.extensions import BinaryReader
-from splusthon.sessions import MemorySession, StringSession
-from splusthon.sessions.memory import _SentFileType
+from fnc_splus._mtproto.crypto import AuthKey
+from fnc_splus._mtproto.extensions import BinaryReader
+from fnc_splus._mtproto.sessions import MemorySession, StringSession
+from fnc_splus._mtproto.sessions.memory import _SentFileType
 
 from .storage import Store, pack, unpack
 
@@ -17,6 +17,7 @@ def decode_tl(data: bytes):
 class EncryptedSession(MemorySession):
     def __init__(self, store: Store):
         super().__init__()
+        self._tmp_auth_key = None
         self.store = store
         data = store.get('engine')
         if data:

@@ -10,7 +10,7 @@ from pathlib import Path
 
 import av
 from PIL import Image, ImageDraw, ImageStat
-from splusthon import types
+from fnc_splus._mtproto import types
 
 from fnc_splus import Client
 

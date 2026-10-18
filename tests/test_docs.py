@@ -8,7 +8,7 @@ from urllib.parse import unquote, urlsplit
 
 from fnc_splus import Client
 from fnc_splus.catalog import Catalog
-from splusthon.tl.alltlobjects import tlobjects
+from fnc_splus._mtproto.tl.alltlobjects import tlobjects
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('build_docs', ROOT / 'scripts/build_docs.py')
@@ -20,6 +20,9 @@ def test_generated_reference_covers_all_methods_and_parameters():
     data = builder.datasets()
     assert len(data['methods']) == len(Catalog().methods) == 374
     assert len(data['types']) == 1309
+    message_type = next(item for item in data['types'] if item['name'] == 'message')
+    assert message_type['python_name'] == 'Message'
+    assert all('fnc_splus.' not in (item['python_name'] or '') for item in data['types'])
     assert {x['name'] for x in data['friendly']} == {
         name for name, value in Client.__dict__.items() if not name.startswith('_') and callable(value)
     }

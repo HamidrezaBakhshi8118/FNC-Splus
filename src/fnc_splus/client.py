@@ -10,7 +10,7 @@ import mimetypes
 from pathlib import Path
 import secrets
 
-from splusthon import errors, events, functions, types, utils
+from fnc_splus._mtproto import errors, events, functions, types, utils
 
 from .auth import login
 from .catalog import Catalog, NativeMethods
@@ -64,7 +64,7 @@ class Client(NativeMethods):
         self._engine_settings = dict(connection=connection, connection_retries=connection_retries,
                                      request_retries=0, retry_delay=1, flood_sleep_threshold=0,
                                      raise_last_call_error=True, catch_up=catch_up,
-                                     sequential_updates=True, app_version='FNC-Splus 0.1.1',
+                                     sequential_updates=True, app_version='FNC-Splus 0.2.0',
                                      device_model='FNC-Splus Python', lang_code='fa')
         self._handlers = []
         self._tasks = []
@@ -83,7 +83,7 @@ class Client(NativeMethods):
 
     @property
     def native(self):
-        """Advanced SPlusthon engine. Direct calls bypass FNC's durable outbox."""
+        """Internal MTProto engine. Direct calls bypass FNC's durable outbox."""
         if self._engine is None:
             raise RuntimeError('Start the client before accessing native methods')
         return self._engine

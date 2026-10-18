@@ -10,10 +10,12 @@ python -m pip install "git+https://github.com/HamidrezaBakhshi8118/FNC-Splus.git
 # برای به‌روزرسانی نصب قبلی:
 python -m pip install --upgrade "git+https://github.com/HamidrezaBakhshi8118/FNC-Splus.git@main"
 # از فایل wheel دانلودشده:
-python -m pip install ./fnc_splus-0.1.1-py3-none-any.whl
+python -m pip install ./fnc_splus-0.2.0-py3-none-any.whl
 ```
 
 نسخهٔ اول در PyPI منتشر نشده است؛ فرمان `pip install FNC-Splus` به‌تنهایی تا زمان انتشار در PyPI، روش نصب این نسخه نیست. نصب از Git یا wheel نیازی به حساب PyPI ندارد.
+
+از نسخهٔ ۰٫۲٫۰، نصب یا اجرای SPlusthon و توزیع Telethon لازم نیست. موتور داخل پکیج است؛ بخش عمومی آن از منبع MIT با حفظ نام و مجوز آمده و بخش‌های اختصاصی سروش در FNC سازگار شده‌اند. [جزئیات موتور داخلی و سازگاری سشن](INTERNAL_ENGINE.fa.md) را ببینید. نوع‌ها و خطاها را از `fnc_splus` وارد کنید و شیء موتور خارجی را با نوع‌های داخلی ترکیب نکنید.
 
 ## ورود با شماره و OTP
 
@@ -168,7 +170,7 @@ await client.users_get_full_user(id=types.InputUserSelf())
 await client.invoke("users.getFullUser", id=types.InputUserSelf())
 ```
 
-۳۷۴ نام RPC از سورس رسمی استخراج و دارای encode/decode محلی هستند. برخی نام‌ها عملیات کنترلی handshake هستند و برای `Client.invoke` حساب کاربری مناسب نیستند. RPCهای تغییردهنده در صف پایدار قرار می‌گیرند و خواندنی‌ها مستقیم اجرا می‌شوند. `client.native` دسترسی پیشرفته به موتور SPlusthon است و صف FNC را دور می‌زند. [فهرست کامل](RPC_CATALOG.fa.md) و [شواهد پروتکل](PROTOCOL.fa.md) را ببینید. اجرای زندهٔ همهٔ عملیات، به‌خصوص حذف، پرداخت، تغییر حساب و مدیریت کانال، بخشی از تست این نسخه نیست.
+۳۷۴ نام RPC از سورس رسمی استخراج و دارای encode/decode محلی هستند. برخی نام‌ها عملیات کنترلی handshake هستند و برای `Client.invoke` حساب کاربری مناسب نیستند. RPCهای تغییردهنده در صف پایدار قرار می‌گیرند و خواندنی‌ها مستقیم اجرا می‌شوند. `client.native` دسترسی پیشرفته به موتور داخلی MTProto است و صف FNC را دور می‌زند. [فهرست کامل](RPC_CATALOG.fa.md) و [شواهد پروتکل](PROTOCOL.fa.md) را ببینید. اجرای زندهٔ همهٔ عملیات، به‌خصوص حذف، پرداخت، تغییر حساب و مدیریت کانال، بخشی از تست این نسخه نیست.
 
 ## حالت همزمان و VS Code
 

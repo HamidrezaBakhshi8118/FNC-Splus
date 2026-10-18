@@ -17,3 +17,5 @@ jobs:
       - run: python scripts/build_docs.py --check
       - run: python -m pytest
       - run: python -m build
+      - shell: bash
+        run: python scripts/check_wheel.py dist/fnc_splus-*.whl

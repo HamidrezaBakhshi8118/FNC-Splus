@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import re
 
-from splusthon.tl.alltlobjects import tlobjects
+from fnc_splus._mtproto.tl.alltlobjects import tlobjects
 from fnc_splus import protocol as _protocol  # noqa: F401 - register official constructor fixes
 
 ROOT = Path(__file__).resolve().parents[1]

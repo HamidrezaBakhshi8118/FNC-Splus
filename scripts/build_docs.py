@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 import re
 
-from splusthon.tl.alltlobjects import tlobjects
+from fnc_splus._mtproto.tl.alltlobjects import tlobjects
 
 from fnc_splus import Client, __version__
 from fnc_splus.catalog import Catalog, snake
@@ -308,7 +308,11 @@ def datasets():
             if is_type and match:
                 name, cid, fields, output = match.groups()
                 cls = tlobjects.get(int(cid, 16))
-                py_name = (cls.__module__.split('.tl.types')[-1].lstrip('.') + '.' + cls.__name__).lstrip('.') if cls else None
+                py_name = None
+                if cls:
+                    namespace = cls.__module__.split('.tl.types', 1)
+                    prefix = namespace[1].lstrip('.') if len(namespace) == 2 else ''
+                    py_name = '.'.join(part for part in (prefix, cls.__name__) if part)
                 constructors[cid] = {'name': name, 'constructor_id': cid, 'schema': line,
                                      'result_type': output, 'python_name': py_name,
                                      'signature': signature(py_name, cls) if cls else None,

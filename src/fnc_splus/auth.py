@@ -5,7 +5,7 @@ import inspect
 import re
 import sys
 
-from splusthon import errors, functions
+from fnc_splus._mtproto import errors, functions
 
 from .exceptions import AuthenticationRequired, LoginRequiredError, SessionRevokedError
 

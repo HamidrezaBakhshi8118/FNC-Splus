@@ -4,7 +4,7 @@ from importlib.resources import files
 import json
 import re
 
-from splusthon.tl.alltlobjects import tlobjects
+from fnc_splus._mtproto.tl.alltlobjects import tlobjects
 
 from .methods import NativeMethods as NativeMethods
 from . import protocol as _protocol  # noqa: F401 - register official constructor fixes

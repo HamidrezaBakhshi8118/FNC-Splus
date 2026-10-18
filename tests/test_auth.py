@@ -1,7 +1,7 @@
 import asyncio
 
 import pytest
-from splusthon import errors
+from fnc_splus._mtproto import errors
 
 from fnc_splus import AuthenticationRequired, LoginRequiredError, SessionRevokedError
 from fnc_splus.auth import normalize_phone
