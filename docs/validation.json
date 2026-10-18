@@ -33,7 +33,30 @@
   "http_fallback_status": 404,
   "poll_in_saved_messages_supported": false,
   "multi_day_production_soak_tested": false,
-  "github_actions_matrix_completed": false,
+  "github_actions_matrix_completed": true,
+  "github_actions": {
+    "code_commit": "7291199d21634e39fddc1ee8a1fe5fbb4574283e",
+    "url": "https://github.com/HamidrezaBakhshi8118/FNC-Splus/actions/runs/39108992785",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "test (windows-latest, 3.11)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (ubuntu-latest, 3.11)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (windows-latest, 3.14)",
+        "conclusion": "success"
+      },
+      {
+        "name": "test (ubuntu-latest, 3.14)",
+        "conclusion": "success"
+      }
+    ]
+  },
   "pypi_published": false,
   "scope": "Live writes were limited to the consenting account's own Saved Messages. No claim is made that all account RPCs were run live."
 }

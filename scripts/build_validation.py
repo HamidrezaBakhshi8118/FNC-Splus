@@ -21,6 +21,7 @@ def suite(name):
 def main():
     login, events, portable = read('live-login.json'), read('live-events.json'), read('portable-session-linux.json')
     media, video, public = read('live-saved-messages.json'), read('live-h264.json'), read('public-probe.json')
+    ci = read('github-actions.json') if (RESULTS / 'github-actions.json').exists() else {}
     report = {
         'date': '2026-10-18', 'version': '0.1.0',
         'windows': suite('windows.xml'), 'linux': suite('linux.xml'),
@@ -39,7 +40,9 @@ def main():
         'http_fallback_status': next(item.get('status') for item in public['tests'] if item['transport'] == 'http'),
         'poll_in_saved_messages_supported': False,
         'multi_day_production_soak_tested': False,
-        'github_actions_matrix_completed': False,
+        'github_actions_matrix_completed': ci.get('conclusion') == 'success' and
+            len(ci.get('jobs', [])) == 4 and all(job['conclusion'] == 'success' for job in ci['jobs']),
+        'github_actions': ci,
         'pypi_published': False,
         'scope': 'Live writes were limited to the consenting account\'s own Saved Messages. '
                  'No claim is made that all account RPCs were run live.',
